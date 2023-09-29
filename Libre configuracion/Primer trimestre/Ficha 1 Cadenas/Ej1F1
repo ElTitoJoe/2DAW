@@ -1,7 +1,5 @@
-/*
-1.- Conteste con verdadero o falso a cada una de las siguientes proposiciones; en caso de ser falso, explique por qué.
-a) Cuando los objetos String se comparan utilizando ==, el resultado es true si los objetos String contiene los mismos valores.
-La a es falso, porque el operador "==" compara las referencias de los objetos y no sus xontenidos.
+1.- Conteste con verdadero o falso a cada una de las siguientes proposiciones; en caso de ser falso,
+explique por qué.
+a) Cuando los objetos String se comparan utilizando ==, el resultado es true si los objetos
+String contiene los mismos valores.
 b) Un objeto String puede modificarse una vez creado.
-La b es verdadera.
-*/
