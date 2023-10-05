@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Persona</title>
+</head>
+<body>
+    <script>
+        class Persona {
+            constructor(nombre, edad, altura) {
+                this.nombre = nombre;
+                this.edad = edad;
+                this.altura = altura;
+            }
+        }
+        const p1 = new Persona("Dimas", 28, 185);
+
+
+        console.log(`${p1.nombre} tiene ${p1.edad} años y mide ${p1.altura} centímetros.`);
+    </script>
+</body>
+</html>
