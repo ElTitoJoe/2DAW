@@ -44,10 +44,9 @@
 }
 div{
     border-style: double;
-    border-color: white;
+    border-color: gray;
 }
 h1{
-    text-align: center;
     margin-top: auto;
 }
 img{
