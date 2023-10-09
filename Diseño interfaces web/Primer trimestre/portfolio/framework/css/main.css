@@ -42,6 +42,7 @@
 .col-12 {
     width: 100%;
 }
+
 div{
     border-style: double;
     border-color: white;
@@ -82,4 +83,9 @@ h1,h2,h3,h4 {
 .informacion{
     font-size: 12px;
     font-weight: bolder;
+}
+.col-6-dia {
+    border-left: 0.1rem solid gray;
+    border-right: 0.1rem solid gray;
+    width: 50%;
 }
