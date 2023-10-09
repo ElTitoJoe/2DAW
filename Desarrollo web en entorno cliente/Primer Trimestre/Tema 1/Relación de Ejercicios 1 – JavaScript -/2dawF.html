@@ -21,9 +21,8 @@
             var radio = parseFloat(document.getElementById("radio").value);
             
             if (!isNaN(radio) && radio > 0) {
-                var longitud = 2 * Math.PI * radio; // Fórmula para la longitud de la circunferencia
-                var area = Math.PI * Math.pow(radio, 2); // Fórmula para el área del círculo
-                
+                var longitud = 2 * Math.PI * radio;
+                var area = Math.PI * Math.pow(radio, 2);
                 document.getElementById("longitud").textContent = longitud.toFixed(2);
                 document.getElementById("area").textContent = area.toFixed(2);
             } else {
