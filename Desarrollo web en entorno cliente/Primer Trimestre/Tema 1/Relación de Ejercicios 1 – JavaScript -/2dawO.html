@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Contador, Suma y Producto de Números</h1>
+
+    <script>
+        var contador = 0;
+        var suma = 0;
+        var producto = 1;
+        var numero = 0;
+
+        while (numero !== 9999) {
+            numero = parseInt(prompt("Escribe un número (9999 para terminar):"));
+
+            if (!isNaN(numero)) {
+                contador++;
+                suma += numero;
+                if (numero !== 9999) {
+                    producto *= numero;
+                }
+            }
+        }
+        alert("Has ingresado " + (contador - 1) + " números (excluyendo el 9999).");
+        alert("La suma de los números ingresados (excluyendo el 9999) es: " + suma);
+        alert("El producto de los números ingresados (excluyendo el 9999) es: " + producto);
+    </script>
+</body>
+</html>

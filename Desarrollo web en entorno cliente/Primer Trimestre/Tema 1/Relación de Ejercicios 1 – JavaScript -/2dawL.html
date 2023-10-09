@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Producto de Dos Números</h1>
+
+    <script>
+        var volverAEmpezar = true;
+
+        while (volverAEmpezar) {
+            var numero1 = parseInt(prompt("Escribe el primer número positivo menor de 57:"));
+            var numero2 = parseInt(prompt("Escribe el segundo número positivo menor de 57:"));
+
+            if (!isNaN(numero1) && !isNaN(numero2) && numero1 > 0 && numero2 > 0 && numero1 < 57 && numero2 < 57) {
+                var producto = numero1 * numero2;
+                alert("El producto de " + numero1 + " y " + numero2 + " es: " + producto);
+            } else {
+                alert("Los números no son válidos. Deben ser positivos y menores de 57.");
+            }
+
+            var respuesta = prompt("¿Quieres volver a empezar? (S/N)").toUpperCase();
+            if (respuesta !== "S") {
+                volverAEmpezar = false;
+            }
+        }
+    </script>
+</body>
+</html>

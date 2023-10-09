@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Conversión de Base</h1>
+    <form>
+        <label for="numeroOctal">Ingrese un número en base octal:</label>
+        <input type="text" id="numeroOctal" name="numeroOctal"><br><br>
+        
+        <input type="button" value="Convertir" onclick="convertirNumero()">
+    </form>
+
+    <p>Resultado en base decimal: <span id="baseDecimal"></span></p>
+    <p>Resultado en base 2 (binario): <span id="baseBinaria"></span></p>
+
+    <script>
+        function convertirNumero() {
+            var numeroOctal = document.getElementById("numeroOctal").value;
+            var baseDecimal = parseInt(numeroOctal, 8);
+            var baseBinaria = baseDecimal.toString(2);
+            document.getElementById("baseDecimal").textContent = baseDecimal;
+            document.getElementById("baseBinaria").textContent = baseBinaria;
+        }
+    </script>
+</body>
+</html>
