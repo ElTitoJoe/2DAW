@@ -89,3 +89,38 @@ h1,h2,h3,h4 {
     border-right: 0.1rem solid gray;
     width: 50%;
 }
+.at-1{
+    width: 100%;
+    background-color: rgb(47, 175, 48);
+}
+.at-2{
+    background-color: rgb(21, 82, 187);
+    width: 66.66%;
+}
+.at-3{
+
+    background-color: rgb(207, 187, 55);
+    width: 33.33%;
+}
+.at-4{
+    width: 100%;
+    background-color: rgb(178, 21, 92);
+}
+@media (max-width: 768px){
+    .main {
+        width: 50%;
+    }
+    .aside {
+        width: 50%;
+    }
+}
+@media (max-width: 568px){
+    .main {
+        width: 100vw;
+        height: 55vh;
+    }
+    .aside {
+        width: 100vw;
+        height: 20vh;
+    }
+}
