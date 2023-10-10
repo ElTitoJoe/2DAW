@@ -1,25 +1,18 @@
 public class Ej10ClasesJoaquin {
     public static void main(String[] args) {
-        // Crear dos conjuntos de enteros
         ConjuntoEnteros conjuntoA = new ConjuntoEnteros();
         ConjuntoEnteros conjuntoB = new ConjuntoEnteros();
-
         conjuntoA.insertarElemento(5);
         conjuntoA.insertarElemento(10);
         conjuntoA.insertarElemento(20);
-
         conjuntoB.insertarElemento(10);
         conjuntoB.insertarElemento(30);
-
         System.out.println("Conjunto A: " + conjuntoA.aStringConjunto());
         System.out.println("Conjunto B: " + conjuntoB.aStringConjunto());
-
         ConjuntoEnteros conjuntoUnion = ConjuntoEnteros.union(conjuntoA, conjuntoB);
         ConjuntoEnteros conjuntoInterseccion = ConjuntoEnteros.interseccion(conjuntoA, conjuntoB);
-
         System.out.println("Unión de A y B: " + conjuntoUnion.aStringConjunto());
         System.out.println("Intersección de A y B: " + conjuntoInterseccion.aStringConjunto());
-
         System.out.println("¿Conjunto A igual a conjunto B? " + conjuntoA.esIgualA(conjuntoB));
     }
 }
@@ -28,12 +21,12 @@ class ConjuntoEnteros {
     private boolean[] conjunto;
 
     public ConjuntoEnteros() {
-        conjunto = new boolean[101]; // Inicializa un conjunto vacío
+        conjunto = new boolean[101];
     }
 
     public boolean esta(int numero) {
         if (numero < 0 || numero > 100) {
-            return false; // Fuera del rango permitido
+            return false;
         }
         return conjunto[numero];
     }
@@ -65,7 +58,7 @@ class ConjuntoEnteros {
         }
 
         if (primero) {
-            return "---"; // Conjunto vacío
+            return "---";
         }
 
         return result.toString();
