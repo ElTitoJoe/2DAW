@@ -27,6 +27,7 @@ public class Ej15ArraysJoaquin {
         }
 
         System.out.println("Gracias por utilizar nuestro sistema de reservas.");
+        teclado.close();
     }
 
     private static int asignarAsiento(boolean[] asientos, int eleccion) {

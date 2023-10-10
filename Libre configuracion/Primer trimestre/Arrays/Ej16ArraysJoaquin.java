@@ -48,5 +48,6 @@ public class Ej16ArraysJoaquin {
             }
         }
         System.out.printf("%.2f\n", totalGeneral);
+        teclado.close();
     }
 }
