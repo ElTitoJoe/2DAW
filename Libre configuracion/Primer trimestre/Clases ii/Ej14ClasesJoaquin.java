@@ -70,11 +70,7 @@ public class Ej14ClasesJoaquin {
             int numero = Integer.parseInt(nif.substring(0, 8));
             return letra == calcularLetraNIF(numero);
         }
-
-        private static char extraerLetraNif(String nif) {
-            return nif.charAt(8);
-        }
-
+        
         private static int extraerNumeroDni(String nif) {
             return Integer.parseInt(nif.substring(0, 8));
         }
