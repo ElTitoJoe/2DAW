@@ -13,7 +13,6 @@ public class Ej3ClasesJoaquin {
         System.out.println("Anchura: " + miRectangulo.obtenerAnchura());
         System.out.println("Área: " + miRectangulo.calcularArea());
         System.out.println("Perímetro: " + miRectangulo.calcularPerimetro());
-
         scanner.close();
     }
 }
@@ -21,7 +20,6 @@ public class Ej3ClasesJoaquin {
 class Rectangulo {
     private double longitud;
     private double anchura;
-
     public Rectangulo() {
         longitud = 1.0;
         anchura = 1.0;
