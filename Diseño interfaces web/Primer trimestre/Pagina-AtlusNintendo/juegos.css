@@ -1,22 +1,22 @@
-body, div, figure{
+body, ul, figure{
     margin: 0;
     padding: 0;
 }
-div{
+ul{
     list-style: none;
     display: flex;
 }
-div{
+ul li{
     width: 48%;
 }
-div figure{
+ul li figure{
     padding: 5px;
     position: relative;
 }
-div figure:hover figcaption{
+ul li figure:hover figcaption{
     display: block;
 }
-div figcaption{
+ul li figcaption{
     position: absolute;
     top: 5px;
     left: 5px;
@@ -29,7 +29,6 @@ div figcaption{
     color: white;
 
 }
-
 img{
     width: 100%;
 }
