@@ -1,34 +1,33 @@
-body, ul, figure{
-    margin: 0;
-    padding: 0;
-}
-ul{
-    list-style: none;
-    display: flex;
-}
-ul li{
-    width: 48%;
-}
-ul li figure{
-    padding: 5px;
+.contenedor {
     position: relative;
-}
-ul li figure:hover figcaption{
-    display: block;
-}
-ul li figcaption{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    background: rgba(0,0,0,.7);
-    text-align: center;
-    padding: 15px;
-    font: 20px/30px Verdana;
-    color: white;
-
-}
-img{
+  }
+  
+  .imagen {
+    padding-left: 10px;
+    border-left: 10px;
     width: 100%;
-}
+  }
+  
+  .texto {
+    position: absolute;
+    width: 92.4%;
+    height: 100%;
+    transform: translate(0%, -100%);
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    text-align: center;
+  }
+
+  .div{
+    border-color: aliceblue;
+  }
+  
+  .contenedor:hover .texto {
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1px;
+  }
