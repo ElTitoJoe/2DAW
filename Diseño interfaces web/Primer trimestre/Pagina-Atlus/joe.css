@@ -1,3 +1,4 @@
+/*Esto nos perite el poder modificar el cursor al momento de meternos en la pagina*/
 html{
   cursor: url(cursor/cursor.cur),
   auto;
@@ -11,13 +12,13 @@ a:hover{
 .contenedor {
   position: relative;
   }
-  
+/*Adaptacion de la imagen*/
 .imagen {
   padding-left: 10px;
   border-left: 10px;
   width: 100%;
 }
-  
+/*Nos permite pasar el cursor sobre la imagen y que en esta aparezca texto*/
 .texto {
   position: absolute;
   width: 92.4%;
@@ -28,7 +29,7 @@ a:hover{
   display: none;
   text-align: center;
 }
-
+/*Pequeño borde balnco en los div*/
 .div{
   border-color: aliceblue;
 }
