@@ -1,0 +1,28 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+  }
+
+  .rotated {
+    transform: rotate(45deg);
+    background-color: blue;
+  }
+
+  .scaled {
+    transform: scale(0.7);
+    background-color: red;
+  }
+
+  .moved {
+    transform: translate(10px);
+    background-color: green;
+  }
+  .skew{
+    transform: skew(-38deg);
+    background-color: blueviolet;
+  }
+  .matrix{
+    transform: matrix(5.9,-.9,2,-5.9,0,100);
+    background-color: orangered;
+  }
