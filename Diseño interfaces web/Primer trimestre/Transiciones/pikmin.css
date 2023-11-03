@@ -1,0 +1,11 @@
+img{
+    font-size: 30px;
+    margin: 200px;
+    transition-property: background-color;
+    transition:background-color 3s,width 2s,height 2s,font-size 2s, cursor 2s,border 2s,transform 500s;
+  }
+  img:hover {
+    font-size: 25px;
+    cursor: pointer;
+    transform: rotate(500000deg) skew(20deg) scale(4);
+  }
