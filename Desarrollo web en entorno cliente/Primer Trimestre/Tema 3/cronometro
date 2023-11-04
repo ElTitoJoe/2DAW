@@ -28,7 +28,7 @@
                 startStopButton.textContent = "Iniciar";
             } else {
                 startTime = Date.now() - (startTime || 0);
-                intervalId = setInterval(actualizarCronometro, 1); // Actualizar cada 1 milisegundo
+                intervalId = setInterval(actualizarCronometro, 1);
                 startStopButton.textContent = "Detener";
             }
             running = !running;
