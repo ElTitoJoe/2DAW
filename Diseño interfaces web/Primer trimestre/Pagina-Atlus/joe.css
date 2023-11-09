@@ -78,6 +78,49 @@ footer {
   animation: fadeInUp 1s ease forwards; /* Utiliza la animación de @keyframes */
 }
 
+.logo-abajo {
+  width: 190px; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: auto; /* Para mantener la proporción al cambiar el tamaño */
+  transition: transform 1s ease, margin 1s ease; /* Agregamos transición para suavizar los cambios */
+  animation: moveAndRotate 4s ease infinite, changeSize 6s ease infinite; /* Aplicamos las animaciones definidas por @keyframes */
+}
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translate(0, 0);
+    margin: 100px;
+  }
+  25% {
+    transform: translate(100px, 0px);
+    margin: 100px;
+  }
+  50% {
+    transform: translate(100px, 100px);
+    margin: 100px;
+  }
+  75% {
+    transform: translate(100px, 100px);
+    margin: 100px;
+  }
+  100% {
+    transform: translate(0, 0);
+    margin: 100px;
+  }
+}
+
+@keyframes changeSize {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
