@@ -6,55 +6,87 @@ a:hover {
   cursor: url(cursor/Link\ Click.cur), auto;
 }
 
-.margen {
-  border-left: 1px solid #000; /* Bordes a la izquierda */
-  border-right: 1px solid #000; /* Bordes a la derecha */
-  padding-left: 15px; /* Ajuste de espacio interior a la izquierda para no ocultar el contenido bajo el borde */
-  padding-right: 15px; /* Ajuste de espacio interior a la derecha para no ocultar el contenido bajo el borde */
+header{
+  margin-top: -25px;
 }
 
 .contenedor {
   position: relative;
-  margin: 25px 0; /* 25px arriba y abajo, 0 a los lados */
+  margin: 35px 0; /* 25px arriba y abajo, 0 a los lados */
+}
+
+li{
+  font-size: 20px;
+  transition:font-size 1s, cursor 1s;
+}
+li:hover {
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .imagen {
-  padding-left: 10px;
+  padding-top: 21px;
+  padding-left: 25px;
+  padding-right: 25px;
   border-left: 10px;
   width: 100%;
-  transition: transform 0.5s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+  opacity: 1; /* Ajustamos la opacidad inicial */
+  transition: opacity 0.5s, transform 0.5s ease, brightness 3s; /* Agregamos transición para opacidad, tamaño y brillo */
+}
+
+.contenedor:hover .imagen {
+  transform: scale(1.17);
+  filter: brightness(50%);
+  opacity: 0.7; /* Hacemos que la imagen sea más opaca al pasar el ratón */
 }
 
 .texto {
   position: absolute;
-  width: 90%; /* Ajustamos el ancho del texto para que ocupe lo mismo que la imagen */
+  width: 90%;
   height: 100%;
-  top: 0%;
-  left: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(0, 0, 0, .8);
-  display: none;
+  opacity: 0;
   text-align: center;
-  transition-property: background-color;
-  transition: stransform 0.5s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
-}
-
-.div {
-  border-color: aliceblue;
-}
-
-.contenedor:hover .imagen {
-  transform: scale(1.2); /* Hacemos la imagen un 20% más grande al pasar el ratón */
+  transition: opacity 2s ease;
+  z-index: 2;
 }
 
 .contenedor:hover .texto {
-  display: block;
-  transform: scale(1.2); /* Hacemos el texto un 20% más grande al pasar el ratón */
+  opacity: 1;
 }
+
 
 footer {
   text-align: center;
   padding: 1px;
+}
+.rotar-completo{
+  transition:transform 1s;
+}
+.rotar-completo:hover {
+  transform: rotate(360deg);
+  transition: transform 1s; /* Ajusta la duración y el tipo de animación según tus preferencias */
+}
+
+.animated-div {
+  opacity: 0;
+  transform: translateY(100px); /* Mueve los div hacia abajo */
+  transition: opacity 2s ease, transform21s ease;
+  animation: fadeInUp 1s ease forwards; /* Utiliza la animación de @keyframes */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes myAnim {
@@ -65,12 +97,4 @@ footer {
   100% {
     transform: scale(1.2);
   }
-}
-li{
-  font-size: 20px;
-  transition:font-size 1s, cursor 1s;
-}
-li:hover {
-  font-size: 25px;
-  cursor: pointer;
 }
