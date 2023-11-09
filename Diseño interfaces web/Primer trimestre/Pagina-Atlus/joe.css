@@ -35,7 +35,8 @@ a:hover {
   background-color: rgba(0, 0, 0, .8);
   display: none;
   text-align: center;
-  transition: transform 0.5s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+  transition-property: background-color;
+  transition: stransform 0.5s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
 }
 
 .div {
@@ -64,4 +65,12 @@ footer {
   100% {
     transform: scale(1.2);
   }
+}
+li{
+  font-size: 20px;
+  transition:font-size 1s, cursor 1s;
+}
+li:hover {
+  font-size: 25px;
+  cursor: pointer;
 }
