@@ -1,5 +1,17 @@
-$color_fondo:red;
+$primary-color:steelblue;
+$secundary-color:skyblue;
+$light-color:#f4f4f4;
+$dark-color:#333;
+$font-stack:Arial,Helvetica, sans-serif;
 
 *{
-    background-color: $color_fondo;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: $light-color;
+    color: $dark-color;
+    font-size: $font-stack;
+    line-height: 1.5;
 }
