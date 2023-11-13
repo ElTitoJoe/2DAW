@@ -10,13 +10,13 @@
             echo "Número en formato decimal: " . $numero;
             break;
         case 2:
-            echo "Número en formato hexadecimal minúscula: " . dechex($numero);
+            echo "Número en formato hexadecimal minúscula: " . strtolower(dechex($numero));
             break;
         case 3:
             echo "Número en formato hexadecimal mayúscula: " . strtoupper(dechex($numero));
             break;
         case 4:
-            echo "Número en formato octal: " . strtolower(decoct($numero));
+            echo "Número en formato octal: " . decoct($numero);
             break;
         case 5:
             echo "Número en formato exponencial: " . number_format($numero, 2, ".", "") . "e+0";
