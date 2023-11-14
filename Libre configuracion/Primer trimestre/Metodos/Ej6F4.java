@@ -20,6 +20,7 @@ public class Ej6F4 {
         }
 
         System.out.println("El total de los recibos de ayer es: " + totalRecibos + "€");
+        teclado.close();
     }
 
     public static double calcularPago(double horas) {

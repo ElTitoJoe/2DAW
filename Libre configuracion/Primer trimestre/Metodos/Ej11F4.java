@@ -24,6 +24,7 @@ public class Ej11F4 {
         }
 
         System.out.println("Programa finalizado.");
+        teclado.close();
     }
 
     public static boolean esMultiplo(int num1, int num2) {
