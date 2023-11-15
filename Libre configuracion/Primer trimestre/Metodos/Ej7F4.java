@@ -22,6 +22,7 @@ public class Ej7F4 {
         }
 
         System.out.println("Programa finalizado.");
+        teclado.close();
     }
 
     public static double redondear(double numero) {

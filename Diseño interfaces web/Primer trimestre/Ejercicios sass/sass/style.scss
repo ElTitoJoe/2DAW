@@ -1,30 +1,60 @@
-$fontstack: font-family 'Gaty';
-$fontsize: font-size 16px;
-$primary: rgb(157, 240, 255);
-$primarydark:rgb(5, 82, 129);
-$secundary:rgb(255, 212, 225);
-$secundarydark: rgb(97, 0, 0);
-$third:rgb(148, 255, 247);
-$thirddark:rgb(30, 133, 88);
-$reset: line-height;
-h1{
-    color: $primarydark;
+$fontstack: 'Gotu', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
+$fontsize: 16px;
+$primary: lightskyblue;
+$primary_dark: darken($primary, 10%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: $fontstack;
+body {
+  line-height: 1.6;
 }
-.container{
-    text-align: center;
-    width: 800px;
-    font-size: $fontsize;
-    color: $primarydark;
-    background-color: $primary;
-    transition-duration: 1s;
-    border-top: 3px ;
+
+#container {
+  width: 800px;
+  margin: 0 auto;
 }
-.container:hover{
-    width: 800px;
-    color: $primary;
-    transition-duration: 1s;
-    background-color: $primarydark;
+
+h1 {
+  color: $primary_dark;
+}
+
+nav {
+  display: flex;
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      background-color: $primary;
+      outline: 3px solid $primary_dark;
+      a {
+        color: $primary_dark;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        &:hover {
+          font-weight: bold;
+          color: $primary;
+          background-color: $primary_dark;
+          transition: 1s;
+        }
+      }
+    }
+  }
+}
+
+main {
+  ul {
+    padding-left: 20px; 
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    ul {
+      flex-direction: column;
+    }
+  }
 }
