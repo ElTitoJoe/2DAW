@@ -1,14 +1,11 @@
 import java.util.Scanner;
-import java.util.Random;
-
 public class Ej26F6 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        Random random = new Random();
         boolean jugarOtraVez = true;
 
         while (jugarOtraVez) {
-            int numeroAdivinar = random.nextInt(100) + 1;
+            int numeroAdivinar = generarNumeroAleatorio();
             boolean adivinado = false;
 
             System.out.println("Adivina un número entre 1 y 100:");
@@ -31,5 +28,9 @@ public class Ej26F6 {
 
         teclado.close();
     }
-}
 
+    public static int generarNumeroAleatorio() {
+        int numeroAleatorio = (int) (Math.random() * 100) + 1;
+        return numeroAleatorio;
+    }
+}

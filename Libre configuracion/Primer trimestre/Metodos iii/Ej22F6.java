@@ -8,7 +8,7 @@ public static void main(String[] args) {
         int totalLanzamientos = 100; 
 
         for (int i = 0; i < totalLanzamientos; i++) {
-            boolean resultado = lanzarMoneda();
+            boolean resultado = tirar();
             if (resultado == true) {
                 caraCount++;
                 System.out.println("Cara");
@@ -24,7 +24,7 @@ public static void main(String[] args) {
         teclado.close();
     }
 
-    public static boolean lanzarMoneda() {
+    public static boolean tirar() {
         double random = Math.random();
         
         if (random < 0.5) {
