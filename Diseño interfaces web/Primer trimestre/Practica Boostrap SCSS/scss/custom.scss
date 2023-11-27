@@ -33,3 +33,20 @@
 // 7. Optionally include utilities API last to generate classes based on the Sass map in _utilities.scss
 @import "../bootstrap/scss/utilities/api";
 
+$grid-breakpoints: (
+    sm: 500px
+    jb: 680px
+    md: 720px
+    lg: 992px
+    xl: 1200
+    xxl: 1400
+);
+$container-max-width: (
+    sm: 500px
+    jb: 680px
+    md: 845px
+    lg: 992px
+    xl: 1200
+    xxl: 1400
+);
+
