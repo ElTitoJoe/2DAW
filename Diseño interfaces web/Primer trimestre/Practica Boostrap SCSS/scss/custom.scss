@@ -21,6 +21,15 @@ $custom-breakpoints: (
 
 $grid-breakpoints: map-merge($grid-breakpoints, $custom-breakpoints );
 
+$container-max-whiths: (
+  xs: 0,
+  sm: 576px,
+  md: 768px*1.1,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
 // 5. Include remainder of required parts
 @import "../bootstrap/scss/maps";
 @import "../bootstrap/scss/mixins";
