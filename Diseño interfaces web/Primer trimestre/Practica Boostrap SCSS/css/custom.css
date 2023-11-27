@@ -7056,4 +7056,11 @@ progress {
   .d-print-none {
     display: none !important;
   }
+}
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
 }/*# sourceMappingURL=custom.css.map */
