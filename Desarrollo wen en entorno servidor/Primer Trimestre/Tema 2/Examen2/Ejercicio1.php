@@ -26,7 +26,7 @@ function generar_arbol($altura) {
 $altura_arbol = 7;
 
 // Tamaño de la fuente
-$tamanio_letra = 10; 
+$tamanio_letra = 20; 
 
 // Generar el árbol
 $mi_arbol = generar_arbol($altura_arbol);
