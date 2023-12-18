@@ -75,23 +75,6 @@ footer {
   text-align: center;
   padding: 1px;
 }
-.rotar-completo{
-  -webkit-transition:-webkit-transform 1s;
-  transition:-webkit-transform 1s;
-  -o-transition:transform 1s;
-  transition:transform 1s;
-  transition:transform 1s, -webkit-transform 1s;
-}
-.rotar-completo:hover {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  -o-transition: transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s; /* Ajusta la duración y el tipo de animación según tus preferencias */
-}
 
 .animated-div {
   opacity: 0;
