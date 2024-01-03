@@ -1,9 +1,9 @@
 package hertenciaiii;
 
-class IVA4 extends Articulo {
-    private static final double TIPO = 4.0;
+public class IVA16 extends Articulo {
+    private static final double TIPO = 16.0;
 
-    public IVA4(String nombre, double precioSinIVA) {
+    public IVA16(String nombre, double precioSinIVA) {
         super(nombre, precioSinIVA);
     }
 
