@@ -52,46 +52,253 @@
         </nav>
     </header>
     <main>
-        <!-- Carousel en el que se muestras unos de los juegos destacados de la compañia -->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="6000">
-                <img src="imagenes/carrusel/Persona_5_Royal.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/persona-5-tactica.webp" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/Etrian odyssey.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/Shin magami tensei V.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/Persona_3_reload.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/Metaphor-refantazio.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/Soul-Hackers-2.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/unicorn-overlord.jpg" class="d-block w-100">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="imagenes/carrusel/persona-4-golden.jpg" class="d-block w-100">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+       <!-- Carousel en el que se muestras unos de los juegos destacados de la compañia -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/Persona_5_Royal-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/Persona_5_Royal-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/Persona_5_Royal-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/Persona_5_Royal-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_5_Royal-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/Persona_5_Royal.jpg" alt="Logo-Vacio" >
+            </picture>
           </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/persona-5-tactica-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/persona-5-tactica-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/persona-5-tactica-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/persona-5-tactica-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-5-tactica-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/persona-5-tactica.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/Etrian odyssey-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/Etrian odyssey-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/Etrian odyssey-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/Etrian odyssey-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Etrian odyssey-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/Etrian odyssey.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Shin_magami_tensei_V-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/Shin magami tensei V.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/Persona_3_reload-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/Persona_3_reload-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/Persona_3_reload-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/Persona_3_reload-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Persona_3_reload-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/Persona_3_reload.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Metaphor-refantazio-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/Metaphor-refantazio.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/Soul-Hackers-2-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/Soul-Hackers-2.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/unicorn-overlord-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/unicorn-overlord-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/unicorn-overlord-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/unicorn-overlord-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/unicorn-overlord-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/unicorn-overlord.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <picture>
+              <!-- Imagen para pantallas extra pequeñas (xs) y pequeñas (sm) -->
+              <source srcset="imagenes/carrusel/persona-4-golden-S.webp" type="image/webp" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-S.avif" type="image/avif" media="(max-width: 575.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-S.jpg" type="image/jpg" media="(max-width: 575.98px)" width="100%">
+    
+              <!-- Imagen para pantallas medianas (md) -->
+              <source srcset="imagenes/carrusel/persona-4-golden-M.webp" type="image/webp" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-M.avif" type="image/avif" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-M.jpg" type="image/jpg" media="(min-width: 576px) and (max-width: 767.98px)" width="100%">
+    
+              <!-- Imagen para pantallas grandes (lg) -->
+              <source srcset="imagenes/carrusel/persona-4-golden-L.webp" type="image/webp" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-L.avif" type="image/avif" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-L.jpg" type="image/jpg" media="(min-width: 768px) and (max-width: 991.98px)" width="100%">
+    
+              <!-- Imagen para pantallas extra grandes (xl) -->
+              <source srcset="imagenes/carrusel/persona-4-golden-XL.webp" type="image/webp" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-XL.avif" type="image/avif" media="(min-width: 992px)" width="100%">
+              <source srcset="imagenes/carrusel/persona-4-golden-XL.jpg" type="image/jpg" media="(min-width: 992px)" width="100%">
+    
+              <!-- Imagen por defecto para navegadores que no soportan la etiqueta <source> -->
+              <img src="imagenes/carrusel/persona-4-golden.jpg" alt="Logo-Vacio" >
+            </picture>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
           <div class="row ms-1">
     </main>
     <!-- En cada uno de los siguientes div se muestras una serie de juegos de la compañia, 
