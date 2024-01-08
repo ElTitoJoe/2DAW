@@ -8,7 +8,7 @@ public class Lector {
         //Usamos el try{}catch para recoger errores
         try {
            //Creamos un objeto llamado lector que lee lo que hay en text
-            BufferedReader lector = new BufferedReader(new FileReader("texto.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("\\Users\\Joaquin\\Documents\\GitHub\\2DAW\\Libre configuracion\\Segundo trimestre\\Ficheros\\texto.txt"));
             // Creamos una cadena llamada linea
             String linea;
             // Mientras nuestro texto.txt no esté vacío.
