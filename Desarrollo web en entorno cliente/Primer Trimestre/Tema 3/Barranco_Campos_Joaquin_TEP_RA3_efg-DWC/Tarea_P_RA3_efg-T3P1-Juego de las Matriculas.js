@@ -1,9 +1,8 @@
-//Calcular
 function calcularFigura() {
 
   const numero = document.getElementById('numeroInput').value;
 
-  //Compruebo si el número tiene 4 cifras
+  //Mira si el numero es menor de 4 cifras 
   if (numero<1000) {
       alert("Ingrese un numero");
       return;
@@ -31,11 +30,11 @@ function calcularFigura() {
   else if (poker > 0) figuraActual = 'Poker';
   else figuraActual = 'Nada';
 
-  //Muestro la figura actual
+  //Muestro la figura
   const figuraActualElement = document.getElementById('figuraActual');
   figuraActualElement.textContent = `Figura Actual: ${figuraActual}`;
 
-  //Guardp la cantidad de veces que se ha introducido correctamente una matrícula en una cookie
+  //Guarda las ocurrencias correctas en la cooky
   const matriculasCorrectas = obtenerMatriculasCorrectas();
   matriculasCorrectas.push(numero);
   document.cookie = `matriculasCorrectas=${JSON.stringify(matriculasCorrectas)}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
@@ -54,7 +53,7 @@ function tieneTrio(matricula) {
   return ocurrencias.includes(3);
 }
 
-//Mira si es
+//Mira si es escalera
 function tieneEscalera(matricula, longitud) {
   const digitos = matricula.split('').map(Number);
   digitos.sort();
@@ -66,6 +65,7 @@ function tieneEscalera(matricula, longitud) {
   return false;
 }
 
+//Mira si es poker
 function tienepoker(matricula) {
   const ocurrencias = contarOcurrencias(matricula.split('').map(Number));
   return ocurrencias.includes(4);
@@ -73,7 +73,6 @@ function tienepoker(matricula) {
 
 //Función para comprobar si hay una escalera de longitud X en el array
 function verificarEscalera(array, longitud) {
-  //Copiar y ordenar el array para verificar de la escalera
   const digitosOrdenados = [...array].sort((a, b) => a - b);
 
   //Mira si se trata que es una escalera
@@ -88,10 +87,12 @@ function verificarEscalera(array, longitud) {
 
 //Crea la ventana con toda la información
 function mostrarEstadisticas() {
+  
   //Guarada las matriculas
   const matriculasCorrectas = obtenerMatriculasCorrectas();
   const totalCombinaciones = 1000;
-  //Contador de las figuras
+
+  //Cuentas las figuras 
   let contadorDoblePareja = 0;
   let contadorTrio = 0;
   let contadorEscalera3 = 0;
