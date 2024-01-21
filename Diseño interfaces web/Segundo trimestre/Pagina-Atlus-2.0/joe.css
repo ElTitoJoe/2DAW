@@ -38,6 +38,19 @@ li:hover {
   transition: opacity 0.5s, transform 0.5s ease, brightness 3s;
   transition: opacity 0.5s, transform 0.5s ease, brightness 3s, -webkit-transform 0.5s ease; /* Agregamos transición para opacidad, tamaño y brillo */
 }
+#contenedor-video {
+  text-align: center;
+}
+
+video {
+  width: 95%;
+}
+
+.centro-con-margenes {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Puedes ajustar este valor según tus necesidades */
+}
 
 .contenedor:hover .imagen {
   -webkit-transform: scale(1.17);
