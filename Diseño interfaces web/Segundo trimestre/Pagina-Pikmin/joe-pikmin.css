@@ -1,0 +1,13 @@
+#hamburguer {
+    background: url(imagenes/madera.jpg);
+    background-size: 100%;
+  }
+#fondo{
+    background: url(imagenes/fondo-flores.jpg);
+    background-size:10%;  
+}
+#gif-pikmin {
+    width: 200px;
+    margin-left: 100px;
+    margin-top: -50px;
+  }

@@ -1,4 +1,4 @@
-package hertenciaiii;
+package hertenciaIII;
 
 class IVA7 extends Articulo {
     private static final double TIPO = 7.0;

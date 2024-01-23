@@ -1,4 +1,4 @@
-package hertenciaiii;
+package hertenciaIII;
 
 public class Ej1_2024 {
     public static void main(String[] args) {

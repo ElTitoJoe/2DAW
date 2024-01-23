@@ -1,4 +1,4 @@
-package hertenciaiii;
+package hertenciaIII;
 
 class Articulo {
     private String nombre;
