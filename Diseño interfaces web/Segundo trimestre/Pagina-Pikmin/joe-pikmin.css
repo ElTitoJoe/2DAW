@@ -1,24 +1,25 @@
 #hamburguer {
-    background: url(imagenes/madera.jpg);
+    background: url(imagenes/madera-clara.jpg);
     background-size: 100%;
   }
-#bien-venido{
-    background-color: #fff;
-    background-size:100%;
 
+  #fondo{
+    background: url(imagenes/fondo-flores.jpg);
+    background-size:10%;
 }
-#fondo{
-  background-color: #000;
+
+.div .row{
+  margin-right: -100px;
 }
+
 #gif-pikmin {
     width: 200px;
     margin-left: 100px;
     margin-top: -50px;
   }
-h1 {
+h1{
   text-align: center;
-  color: grey;
-  font: size 40px;;
+  color: black;
 }
   body{
     margin:0;
@@ -26,29 +27,30 @@ h1 {
     }
     
     .footer{
-    background:#000;
+    background: url(imagenes/madera.jpg);
     padding:15px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
+    background-size: 100%;
     }
     
     .footer .row{
     width:100%;
     margin:1% 0%;
     padding:0.6% 0%;
-    color:gray;
+    color:white;
     font-size:0.8em;
     text-align: center
     }
     
     .footer .row a{
     text-decoration:none;
-    color:gray;
+    color:white;
     transition:0.5s;
     }
     
     .footer .row a:hover{
-    color:#fff;
+    color:green;
     }
     
     .footer .row ul{
