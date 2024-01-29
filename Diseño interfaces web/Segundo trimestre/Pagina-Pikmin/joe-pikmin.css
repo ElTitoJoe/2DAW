@@ -2,16 +2,24 @@
     background: url(imagenes/madera.jpg);
     background-size: 100%;
   }
+#bien-venido{
+    background-color: #fff;
+    background-size:100%;
+
+}
 #fondo{
-    background: url(imagenes/fondo-flores.jpg);
-    background-size:10%;  
+  background-color: #000;
 }
 #gif-pikmin {
     width: 200px;
     margin-left: 100px;
     margin-top: -50px;
   }
-
+h1 {
+  text-align: center;
+  color: grey;
+  font: size 40px;;
+}
   body{
     margin:0;
     overflow-x:hidden;
