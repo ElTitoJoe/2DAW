@@ -3,7 +3,7 @@ public class Ej15ArraysJoaquin {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         boolean[] asientos = new boolean[10]; 
-
+//
         while (true) {
             System.out.println("Estas dentro del menú:");
             System.out.println("1.Primera clase");
