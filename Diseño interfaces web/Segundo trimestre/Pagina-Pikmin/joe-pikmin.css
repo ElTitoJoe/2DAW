@@ -165,3 +165,61 @@ img{
     margin:0% 3%;
     }
     }
+
+
+    @keyframes slideInFromLeft {
+      0% {
+          transform: translateX(100%);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  @keyframes slideInFromRight {
+      0% {
+          transform: translateX(-100%);
+          opacity: 0;
+      }
+      100% {
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+
+  .animated-div {
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+  }
+
+  .animated-div:nth-child(even) {
+      animation-name: slideInFromRight;
+  }
+
+  .animated-div:nth-child(odd) {
+      animation-name: slideInFromLeft;
+  }
+
+  /* Add other styles as needed */
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .col-md-6 {
+      width: 50%;
+  }
+
+
+  @keyframes moveLeft {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+.moving-image {
+    position: relative;
+    animation: moveLeft 6s 
+    linear infinite;
+}
