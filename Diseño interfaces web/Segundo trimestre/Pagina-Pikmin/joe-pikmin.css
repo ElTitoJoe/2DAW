@@ -16,7 +16,7 @@
 
  /* Estilos generales */
  #titulo {
-  font-size: 16px; /* Tamaño de fuente por defecto */
+  font-size: 25px; /* Tamaño de fuente por defecto */
 }
 
 #texto {
@@ -33,44 +33,44 @@ img{
 /* Estilos para pantallas pequeñas (sm) */
 @media (min-width: 576px) {
   #titulo {
-      font-size: 18px;
+      font-size: 44px;
   }
 
   #texto {
-      font-size: 16px;
+      font-size: 15px;
   }
 }
 
 /* Estilos para pantallas medianas (md) */
 @media (min-width: 768px) {
   #titulo {
-      font-size: 20px;
+      font-size: 29px;
   }
 
   #texto {
-      font-size: 18px;
+      font-size: 10px;
   }
 }
 
 /* Estilos para pantallas grandes (lg) */
 @media (min-width: 992px) {
   #titulo {
-      font-size: 22px;
+      font-size: 39px;
   }
 
   #texto {
-      font-size: 20px;
+      font-size: 13px;
   }
 }
 
 /* Estilos para pantallas extra grandes (xl) */
 @media (min-width: 1200px) {
   #titulo {
-      font-size: 34px;
+      font-size: 47px;
   }
 
   #texto {
-      font-size: 22px;
+      font-size: 16px;
   }
 }
 
@@ -94,9 +94,7 @@ img{
     margin-top: -20px;
     
   }
-h1{
-  text-align: center;
-}
+  
   body{
     margin:0;
     padding: 0;
