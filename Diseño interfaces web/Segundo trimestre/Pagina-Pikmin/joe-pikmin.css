@@ -23,6 +23,13 @@
   font-size: 14px; /* Tamaño de fuente por defecto */
 }
 
+div{
+  border-radius: 1%;
+}
+
+img{
+  border-radius: 1%;
+}
 /* Estilos para pantallas pequeñas (sm) */
 @media (min-width: 576px) {
   #titulo {
@@ -80,10 +87,6 @@
 
 /* Otros estilos... */
 
-
-.div .row{
-  margin-right: -100px;
-}
 
 #gif-pikmin {
     width: 200px;
