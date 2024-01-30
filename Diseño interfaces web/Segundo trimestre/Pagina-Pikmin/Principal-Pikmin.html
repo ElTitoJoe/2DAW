@@ -1,54 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Título de la página -->
     <title>Pikmin</title>
+    
+    <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="joe-pikmin.css" />
-    <!-- Required meta tags -->
+    
+    <!-- Meta etiquetas requeridas -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS v5.2.1 -->
+    
+    <!-- Enlace al archivo CSS de Bootstrap v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<html>
-
-<head>
 
 <body id="fondo">
+    <!-- Encabezado de la página -->
     <header class="text-center">
+        <!-- Barra de navegación con hamburguesa -->
         <nav class="navbar navbar-expand-md navbar" id="hamburguer">
+            <!-- Logo de Pikmin con enlace a la página principal -->
             <a class="navbar-brand" href="Principal.html" style="margin-left: 10px;"><img
                     src="imagenes/Pikmin_series_logo_new.svg" class="img-fluid" width="300px"></a>
+            
+            <!-- Botón de hamburguesa para dispositivos pequeños -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
                 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenido del menú de navegación -->
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <!-- Enlace a la página de inicio -->
                     <li class="nav-item">
                         <a class="nav-link" href="http://127.0.0.1:3000/2DAW/Diseño%20interfaces%20web/Segundo%20trimestre/Pagina-Pikmin/Principal-Pikmin.html"><p id="texto">Inicio</p></a>
                     </li>
+                    
+                    <!-- Enlace a la parodia del juego en YouTube -->
                     <li class="nav-item">
                         <a class="nav-link" href="https://youtu.be/uHPCJoLrhS0?si=-iAcASTsBoUzoI_F" aria-current="page"><p id="texto">Parodia juego</p></a>
                     </li>
+                    
+                    <!-- Enlace para descubrir a los Pikmins en la página de Nintendo -->
                     <li class="nav-item">
                         <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/" aria-current="page"><p id="texto">Descubre a los pikmins</p></a>
                     </li>
                 </ul>
-                <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/"><img id="gif-pikmin" src="imagenes/pikmin-animado.gif"></a>
                 
+                <!-- Enlace a la página de Nintendo con un gif animado de Pikmin -->
+                <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/"><img id="gif-pikmin" src="imagenes/pikmin-animado.gif"></a>
             </div>
         </nav>
     </header>
+
+    <!-- Imagen animada de Pikmin -->
     <img style="position: relative; top: -77px; margin-bottom: -130px; margin-left: 54px;"
         src="imagenes/pikmin-red-grabbed.gif" width="200px">
-    <main class="container">
 
+    <!-- Contenido principal de la página -->
+    <main class="container">
+        <!-- Sección con fondo de madera -->
         <div class="row" style="background: url(imagenes/madera.jpg);">
+            
+            <!-- Bloque 1: Información sobre Pikmin -->
             <div style="text-align: center;">
                 <p id="titulo" style="position: relative; bottom: -10px; color: wheat;">Welcome to the world of pikmin</p>
                 <img src="imagenes/pikmin-world.jpg" style="width: 100%; margin-bottom: 20px;">
             </div>
+            
+            <!-- Bloque 2: ¿Qué es un Pikmin? -->
             <div class="col-md-6 col-sm-12 animated-div" ; style="background-color: #e2502b; border-radius: 2%;">
                 <p id="titulo">¿Qué es un pikmin?</p>
                 <p id="texto">
@@ -58,12 +82,18 @@
                      como recolectar objetos, luchar contra enemigos y superar obstáculos.
                 </p>
             </div>
+            
+            <!-- Bloque 3: Imagen de Pikmin principales -->
             <div class="col-md-6 col-sm-12 animated-div">
                 <img src="imagenes/pikmin-principales.jpeg" class="img-fluid">
             </div>
+            
+            <!-- Bloque 4: Otra imagen relacionada con Pikmin -->
             <div class="col-md-6 col-sm-12 animated-div">
                 <img src="imagenes/miyamoto-pikmin-4.webp" class="img-fluid">
             </div>
+            
+            <!-- Bloque 5: ¿Quién creó Pikmin? -->
             <div class="col-md-6 col-sm-12 animated-div" style="background-color: #f0e958; border-radius: 2%;">
                 <p id="titulo">¿Quien creo pikmin?</p>
                 <p id="texto">
@@ -73,6 +103,8 @@
                     que implica controlar y dirigir a grupos de pequeñas criaturas para resolver puzzles y superar desafíos.
                 </p>
             </div>
+            
+            <!-- Bloque 6: ¿De qué trata Pikmin? -->
             <div class="col-md-6 col-sm-12 animated-div" ; style="background-color: #3c64ff;">
                 <p id="titulo">¿De qué trata pikmin?</p>
                 <p id="texto">
@@ -82,6 +114,8 @@
                      hacerlo antes de que se acabe el tiempo y Olimar no pueda regresar a casa.
                 </p>
             </div>
+            
+            <!-- Bloque 7: Otra imagen relacionada con la trama de Pikmin -->
             <div class="col-md-6 col-sm-12 animated-div">
                 <div>
                     <img src="imagenes/Pikmin-trama.jpg" class="img-fluid">
@@ -90,47 +124,54 @@
         </div>
         <br>
     </main>
+
+    <!-- Sección de enlaces y fuentes -->
     <div>
-        <!--FONT AWESOME-->
+        <!-- Enlace a Font Awesome para iconos -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--GOOGLE FONTS-->
+        <!-- Enlaces a Google Fonts para fuentes -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-        </head>
-    
-        <body>
-            <div>
-                <img class="moving-image" src="imagenes/pikmin-blue-run.gif" width="50px">
-                <img class="moving-image" src="imagenes/pikmin-yellow-run.gif" width="60px">
-            </div>
-            <img style="position: relative; margin-bottom: -80px; float: right; margin-right: 100px;" src="imagenes/yellow-pikmin-relaz.gif" width="110px">
-            <footer>
-                <div class="footer">
-                    <div class="row">
-                        <ul>
-                            <li><a href="https://www.facebook.com/NintendoAmerica"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/NintendoEurope"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.youtube.com/nintendo"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/nintendoamerica/"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="row">
-                        <a>© Nintendo and Nintendo Switch are trademarks of Nintendo. © 2023 Nintendo.</a>
-                    </div>
-                </div>
-            </footer>
     </div>
 
+    <!-- Sección con imágenes animadas de Pikmin -->
+    <body>
+        <div>
+            <img class="moving-image" src="imagenes/pikmin-blue-run.gif" width="50px">
+            <img class="moving-image" src="imagenes/pikmin-yellow-run.gif" width="60px">
+        </div>
+        <img style="position: relative; margin-bottom: -80px; float: right; margin-right: 5%;" src="imagenes/yellow-pikmin-relaz.gif" width="110px">
+        
+        <!-- Pie de página -->
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <!-- Enlaces a redes sociales -->
+                    <ul>
+                        <li><a href="https://www.facebook.com/NintendoAmerica"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/NintendoEurope"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/nintendo"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/nintendoamerica/"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Información de derechos de autor -->
+                <div class="row">
+                    <a>© Nintendo and Nintendo Switch are trademarks of Nintendo. © 2023 Nintendo.</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts de Popper.js y Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
-
-<html>
+</html>
