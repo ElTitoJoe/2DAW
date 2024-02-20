@@ -66,71 +66,49 @@
     <img style="position: relative; top: -77px; margin-bottom: -130px; margin-left: 54px;"
         src="imagenes/pikmin-red-grabbed.gif" width="200px">
 
-    <!-- Contenido principal de la página -->
-    <main class="container">
-        <!-- Sección con fondo de madera -->
-        <div class="row" style="background: url(imagenes/madera.jpg);">
-            
-            <!-- Bloque 1: Información sobre Pikmin -->
-            <div style="text-align: center;">
-                <p id="titulo" style="position: relative; bottom: -10px; color: wheat;">Welcome to the world of pikmin</p>
-                <img src="imagenes/pikmin-world.jpg" style="width: 100%; margin-bottom: 20px;">
-            </div>
-            
-            <!-- Bloque 2: ¿Qué es un Pikmin? -->
-            <div class="col-md-6 col-sm-12 animated-div" ; style="background-color: #ff6830; border-radius: 2%;">
-                <p id="titulo">¿Qué es un pikmin?</p>
-                <p id="texto">
-                    Los Pikmin son pequeñas criaturas vegetales con forma de plantas que tienen diferentes habilidades y características. 
-                    Hay varios tipos de Pikmin, cada uno con habilidades únicas. Algunos pueden volar, otros son resistentes al fuego o al veneno,
-                     y algunos son más fuertes en el combate. Los Pikmin son leales al Capitán Olimar y seguirán sus órdenes para realizar diversas tareas, 
-                     como recolectar objetos, luchar contra enemigos y superar obstáculos.
-                </p>
-            </div>
-            
-            <!-- Bloque 3: Imagen de Pikmin principales -->
-            <div class="col-md-6 col-sm-12 animated-div">
-                <img src="imagenes/pikmin-principales.jpeg" class="img-fluid">
-            </div>
-            
-            <!-- Bloque 4: Otra imagen relacionada con Pikmin -->
-            <div class="col-md-6 col-sm-12 animated-div">
-                <img src="imagenes/miyamoto-pikmin-4.webp" class="img-fluid">
-            </div>
-            
-            <!-- Bloque 5: ¿Quién creó Pikmin? -->
-            <div class="col-md-6 col-sm-12 animated-div" style="background-color: #f0e958; border-radius: 2%;">
-                <p id="titulo">¿Quien creo pikmin?</p>
-                <p id="texto">
-                    Pikmin fue creado por el diseñador de videojuegos japonés Shigeru Miyamoto, quien es una figura prominente en Nintendo y ha sido 
-                    responsable de la creación de muchas franquicias exitosas de la compañía. La idea para Pikmin se originó cuando Miyamoto estaba 
-                    explorando su jardín y observó hormigas trabajando en equipo. Esta observación inspiró la mecánica de juego central de Pikmin, 
-                    que implica controlar y dirigir a grupos de pequeñas criaturas para resolver puzzles y superar desafíos.
-                </p>
-            </div>
-            
-            <!-- Bloque 6: ¿De qué trata Pikmin? -->
-            <div class="col-md-6 col-sm-12 animated-div" ; style="background-color: #2689ff;">
-                <p id="titulo">¿De qué trata pikmin?</p>
-                <p id="texto">
-                    En Pikmin, controlas al Capitán Olimar, un explorador espacial que se estrella en un planeta llamado PNF-404. Su nave pierde 
-                    piezas esenciales, y Olimar descubre a los Pikmin, pequeñas criaturas que está dispuesto a liderar. Tu tarea es usar los Pikmin
-                     para recolectar piezas de la nave, superar obstáculos y derrotar enemigos. Cada tipo de Pikmin tiene habilidades únicas. Debes 
-                     hacerlo antes de que se acabe el tiempo y Olimar no pueda regresar a casa.
-                </p>
-            </div>
-            
-            <!-- Bloque 7: Otra imagen relacionada con la trama de Pikmin -->
-            <div class="col-md-6 col-sm-12 animated-div">
-                <div>
-                    <img src="imagenes/Pikmin-trama.jpg" class="img-fluid">
-                </div>
-            </div>
-        </div>
-        <br>
-    </main>
+    <!-- Formulario -->
 
-    <!-- Sección de enlaces y fuentes -->
+    <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Nombre</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Apellidos</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" 2required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefaultUsername">Nombre usuario</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+                Acepto los t
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+        
+    <!-- Contenido principal de la página -->
     <div>
         <!-- Enlace a Font Awesome para iconos -->
         <link rel="stylesheet"
