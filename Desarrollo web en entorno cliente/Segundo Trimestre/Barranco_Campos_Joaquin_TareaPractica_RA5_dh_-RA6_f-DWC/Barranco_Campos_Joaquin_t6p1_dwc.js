@@ -61,24 +61,20 @@ let celdas = document.querySelectorAll('#zonadibujo td');
 // Seleccionamos el elemento para mostrar el estado del pincel.
 let estadoPincel = document.querySelector('#pincel');
 
-// Añadimos el evento 'mousedown' a cada celda para activar el pincel.
+// Añadimos el evento para pintar o dejar de pintar
 celdas.forEach(function (celda) {
-    celda.addEventListener('mousedown', function(event){
-        // Activamos el pincel.
-        pincel = true;
+    celda.addEventListener('click', function(event){
+        if(pincel === false){
+            pincel = true; 
+            // Cambiamos el texto para indicar que el pincel está activado.
+            estadoPincel.textContent = "Estas pintando";
+        }
+        else{
+            pincel = false;
+            estadoPincel.textContent = "No estas pintando";
+        }
 
-        // Cambiamos el texto para indicar que el pincel está activado.
-        estadoPincel.textContent = "Estas pintando";
     });
-});
-
-// Añadimos el evento 'mouseup' al body para desactivar el pincel.
-document.body.addEventListener('mouseup', function(event){
-    // Desactivamos el pincel.
-    pincel = false;
-
-    // Cambiamos el texto para indicar que el pincel está desactivado.
-    estadoPincel.textContent = "No estas pintando";
 });
 
 // Añadimos el evento 'mousemove' a cada celda para pintar.
