@@ -4,14 +4,14 @@
 <head>
     <!-- Título de la página -->
     <title>Pikmin</title>
-    
+
     <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" href="joe-pikmin.css" />
-    
+
     <!-- Meta etiquetas requeridas -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Enlace al archivo CSS de Bootstrap v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -23,41 +23,50 @@
         <!-- Barra de navegación con hamburguesa -->
         <nav class="navbar navbar-expand-md navbar" id="hamburguer">
             <!-- Logo de Pikmin con enlace a la página principal -->
-            <a class="navbar-brand" href="Principal.html" style="margin-left: 10px;"><img
+            <a class="navbar-brand" href="Principal-Pikmin.html" style="margin-left: 10px;"><img
                     src="imagenes/Pikmin_series_logo_new.svg" class="img-fluid" width="300px"></a>
-            
+
             <!-- Botón de hamburguesa para dispositivos pequeños -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
                 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- Contenido del menú de navegación -->
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <!-- Enlace a la página de inicio -->
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:3000/2DAW/Diseño%20interfaces%20web/Segundo%20trimestre/Pagina-Pikmin/Principal-Pikmin.html"><p id="texto">Inicio</p></a>
+                        <a class="nav-link" href="Principal-Pikmin.html">
+                            <p id="texto">Inicio</p>
+                        </a>
                     </li>
 
                     <!-- Enlace al formulario -->
                     <li class="nav-item">
-                        <a class="nav-link" href="" aria-current="page"><p id="texto">Formulario</p></a>
+                        <a class="nav-link" href="Formulario-Pikmin.html" aria-current="page">
+                            <p id="texto">Formulario</p>
+                        </a>
                     </li>
 
                     <!-- Enlace a la parodia del juego en YouTube -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://youtu.be/uHPCJoLrhS0?si=-iAcASTsBoUzoI_F" aria-current="page"><p id="texto">Parodia juego</p></a>
+                        <a class="nav-link" href="https://youtu.be/uHPCJoLrhS0?si=-iAcASTsBoUzoI_F" aria-current="page">
+                            <p id="texto">Parodia juego</p>
+                        </a>
                     </li>
-                    
+
                     <!-- Enlace para descubrir a los Pikmins en la página de Nintendo -->
                     <li class="nav-item">
-                        <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/" aria-current="page"><p id="texto">Descubre a los pikmins</p></a>
+                        <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/" aria-current="page">
+                            <p id="texto">Descubre a los pikmins</p>
+                        </a>
                     </li>
                 </ul>
-                
+
                 <!-- Enlace a la página de Nintendo con un gif animado de Pikmin -->
-                <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/"><img id="gif-pikmin" src="imagenes/pikmin-animado.gif"></a>
+                <a class="nav-link" href="https://play.nintendo.com/themes/friends/pikmin/"><img id="gif-pikmin"
+                        src="imagenes/pikmin-animado.gif"></a>
             </div>
         </nav>
     </header>
@@ -69,92 +78,95 @@
     <!-- Formulario -->
 
     <form>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationDefault01">Nombre</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationDefault02">Apellidos</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" 2required>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationDefaultUsername">Nombre usuario</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-              </div>
-              <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+
+        <main class="container">
+            <!-- Sección con fondo de madera -->
+            <div class="row" style="background: url(imagenes/madera.jpg);">
+                <div style="text-align: center;">>
+                    <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edad" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="edad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha</label>
+                            <input type="date" class="form-control" id="fecha" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reseña" class="form-label">Reseña</label>
+                            <textarea class="form-control" id="reseña" rows="3"></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="terminos" required>
+                            <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationDefault03">City</label>
-            <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault04">State</label>
-            <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-                Acepto los t
-            </label>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
-        
-    <!-- Contenido principal de la página -->
-    <div>
-        <!-- Enlace a Font Awesome para iconos -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <!-- Enlaces a Google Fonts para fuentes -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    </div>
-
-    <!-- Sección con imágenes animadas de Pikmin -->
-    <body>
+        </main>
+        <!-- Contenido principal de la página -->
         <div>
-            <img class="moving-image" src="imagenes/pikmin-blue-run.gif" width="50px">
-            <img class="moving-image" src="imagenes/pikmin-yellow-run.gif" width="60px">
+            <!-- Enlace a Font Awesome para iconos -->
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Enlaces a Google Fonts para fuentes -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
         </div>
-        <img style="position: relative; margin-bottom: -80px; float: right; margin-right: 5%;" src="imagenes/yellow-pikmin-relaz.gif" width="110px">
-        
-        <!-- Pie de página -->
-        <footer>
-            <div class="footer">
-                <div class="row">
-                    <!-- Enlaces a redes sociales -->
-                    <ul>
-                        <li><a href="https://www.facebook.com/NintendoAmerica"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/NintendoEurope"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/nintendo"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/nintendoamerica/"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                
-                <!-- Información de derechos de autor -->
-                <div class="row">
-                    <a>© Nintendo and Nintendo Switch are trademarks of Nintendo. © 2023 Nintendo.</a>
-                </div>
+
+        <!-- Sección con imágenes animadas de Pikmin -->
+
+        <body>
+            <div>
+                <img class="moving-image" src="imagenes/pikmin-blue-run.gif" width="50px">
+                <img class="moving-image" src="imagenes/pikmin-yellow-run.gif" width="60px">
             </div>
-        </footer>
-    </div>
+            <img style="position: relative; margin-bottom: -80px; float: right; margin-right: 5%;"
+                src="imagenes/yellow-pikmin-relaz.gif" width="110px">
 
-    <!-- Scripts de Popper.js y Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+            <!-- Pie de página -->
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <!-- Enlaces a redes sociales -->
+                        <ul>
+                            <li><a href="https://www.facebook.com/NintendoAmerica"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/NintendoEurope"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/nintendo"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/nintendoamerica/"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+                    <!-- Información de derechos de autor -->
+                    <div class="row">
+                        <a>© Nintendo and Nintendo Switch are trademarks of Nintendo. © 2023 Nintendo.</a>
+                    </div>
+                </div>
+            </footer>
+            </div>
 
-</body>
+            <!-- Scripts de Popper.js y Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+                integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+                crossorigin="anonymous"></script>
+
+        </body>
 
 </html>
