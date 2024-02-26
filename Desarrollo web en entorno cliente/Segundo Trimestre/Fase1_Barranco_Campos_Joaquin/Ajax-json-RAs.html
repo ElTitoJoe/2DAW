@@ -9,12 +9,6 @@
 </head>
 
 <body>
-    <h3>Desarrollo Web en Entorno Cliente</h3>
-    <p>Selecciona un RA para ver sus criterios</p>
-    <select title="Los RAs" id="selectRA" onchange="mostrarCriterios()"></select>
-    <br>
-    <br>
-    <div id="info"></div>
 
     <!-- Agregamos el formulario de inicio de sesión -->
     <div id="login-form-container" style="display: none;">
@@ -26,6 +20,14 @@
         </form>
         <p id="error-message" class="error-message"></p>
     </div>
+
+    <h3>Desarrollo Web en Entorno Cliente</h3>
+    <p>Selecciona un RA para ver sus criterios</p>
+    <select title="Los RAs" id="selectRA" onchange="mostrarCriterios()"></select>
+    <button id="mostrar-criterios-btn">Mostrar Criterios</button>
+    <br>
+    <br>
+    <div id="info"></div>
 </body>
 
 </html>

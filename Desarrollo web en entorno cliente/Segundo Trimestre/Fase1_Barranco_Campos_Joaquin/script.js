@@ -3,6 +3,11 @@ var selectRA = document.getElementById("selectRA");
 var datos;
 var loggedIn = false; // Variable para controlar si el usuario ha iniciado sesión
 
+function mostrarLogin() {
+    document.getElementById('login-form-container').style.display = 'block';
+    resultado.innerHTML = ""; // Limpiamos el contenedor de información
+}
+
 // Agregar evento de inicio de sesión al formulario
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -19,20 +24,20 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         document.getElementById('error-message').textContent = 'Usuario o contraseña incorrectos.';
     }
 });
-function ajax_get_json()
-{
+
+function ajax_get_json() {
     var xmlhttp;
-    if(window.XMLHttpRequest){
+    if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
-    }else{ 
+    } else {
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
 
-    xmlhttp.onreadystatechange = function(){
-        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             datos = JSON.parse(xmlhttp.responseText);
-            for (var i in datos){
-                for (var j in datos[i]){
+            for (var i in datos) {
+                for (var j in datos[i]) {
                     var option = document.createElement("option");
                     option.text = datos[i][j].id + ": " + datos[i][j].textoRA;
                     option.value = j;
@@ -40,35 +45,34 @@ function ajax_get_json()
                 }
             }
         }
-    }
+    };
     xmlhttp.open("GET", "datos.json", true);
     xmlhttp.send();
 }
 
 function mostrarCriterios() {
     // Si el usuario no ha iniciado sesión, mostramos el formulario de inicio de sesión y no continuamos
-    if (!loggedIn) {
-        document.getElementById('login-form-container').style.display = 'block';
-        resultado.innerHTML = ""; // Limpiamos el contenedor de información
-        return;
-    }
+    document.getElementById('mostrar-criterios-btn').addEventListener('click', function() {
 
-    var index = selectRA.value;
-    var criterios = datos["Desarrollo Web en Entorno Cliente"][index].criterios;
-    var peso = datos["Desarrollo Web en Entorno Cliente"][index].peso;
-    resultado.innerHTML = "";
-    for (var i in criterios) {
-        resultado.innerHTML += i + ": " + criterios[i] + "<br/>";
-    }
-    resultado.innerHTML += "Peso: " + peso;
+        // Si el usuario no ha iniciado sesión, mostramos el formulario de inicio de sesión y no continuamos
+        if (!loggedIn) {
+            mostrarLogin();
+            return;
+        }
+        
+        var index = selectRA.value;
+        var criterios = datos["Desarrollo Web en Entorno Cliente"][index].criterios;
+        var peso = datos["Desarrollo Web en Entorno Cliente"][index].peso;
+        resultado.innerHTML = "";
+        for (var i in criterios) {
+            resultado.innerHTML += i + ": " + criterios[i] + "<br/>";
+        }
+        resultado.innerHTML += "Peso: " + peso;
+    });
 }
 
+// Muesta el login
 window.onload = function() {
-    // Comprobamos si el usuario ya ha iniciado sesión
-    // Si ya ha iniciado sesión, mostramos los criterios directamente
-    if (loggedIn) {
-        mostrarCriterios();
-    } else {
-        ajax_get_json(); // Si no ha iniciado sesión, cargamos los datos como lo hacías antes
-    }
+    mostrarLogin();
+    ajax_get_json();
 };
