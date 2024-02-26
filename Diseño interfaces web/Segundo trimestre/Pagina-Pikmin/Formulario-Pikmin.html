@@ -82,28 +82,34 @@
         <main class="container">
             <!-- Sección con fondo de madera -->
             <div class="row" style="background: url(imagenes/madera.jpg);">
-                <div style="text-align: center;">>
-                    <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                
+                <!-- Bloque 1: Información sobre Pikmin -->
+                <div style="text-align: center;">
+                    <p id="titulo" style="position: relative; bottom: -10px; color: wheat;">Formulario de contacto</p>
+                    <img src="imagenes/pikmin-world.jpg" style="width: 100%; margin-bottom: 20px;">
+                </div>
+                
+                <div>
                     <form>
-                        <div class="mb-3">
+                        <div >
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required>
+                            <input type="text" placeholder="Nombre" class="form-control" id="nombre" required>
                         </div>
                         <div class="mb-3">
                             <label for="edad" class="form-label">Edad</label>
-                            <input type="number" class="form-control" id="edad" required>
+                            <input type="number" placeholder="Edad" class="form-control" id="edad" required>
                         </div>
                         <div class="mb-3">
                             <label for="fecha" class="form-label">Fecha</label>
                             <input type="date" class="form-control" id="fecha" required>
                         </div>
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Correo</label>
-                            <input type="email" class="form-control" id="correo" required>
+                        <imput>
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="email" placeholder="@gmail" class="form-control" id="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="reseña" class="form-label">Reseña</label>
-                            <textarea class="form-control" id="reseña" rows="3"></textarea>
+                            <textarea class="form-control" placeholder="Coloque su reseña o sugerencia." id="reseña" rows="3"></textarea>
                         </div>
                         <div class="form-check mb-3">
                             <input type="checkbox" class="form-check-input" id="terminos" required>
@@ -112,6 +118,13 @@
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
+            <br>
+        </main>
+
+        <main class="container">
+            <!-- Sección con fondo de madera -->
+            <div class="row" style="background: url(imagenes/madera.jpg);">
+                
             </div>
         </main>
         <!-- Contenido principal de la página -->

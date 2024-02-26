@@ -35,6 +35,10 @@ img{
   border-radius: 1%;
 }
 
+label{
+    color: wheat;
+}
+
 /* Estilos responsivos para diferentes tamaños de pantalla */
 @media (min-width: 576px) {
   /* Pantallas pequeñas (sm) */
@@ -44,6 +48,9 @@ img{
 
   #texto {
       font-size: 15px;
+  }
+  label{
+    font-size: 15px;
   }
 }
 
@@ -56,6 +63,10 @@ img{
   #texto {
       font-size: 10px;
   }
+
+  label{
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -66,6 +77,10 @@ img{
 
   #texto {
       font-size: 13px;
+  }
+
+  label{
+    font-size: 13px;
   }
 }
 
@@ -78,6 +93,11 @@ img{
   #texto {
       font-size: 16px;
   }
+
+  label{
+    font-size: 16px;
+  }
+
 }
 
 @media (min-width: 1400px) {
@@ -89,6 +109,11 @@ img{
   #texto {
       font-size: 19px;
   }
+
+  label{
+    font-size: 19px;
+  }
+
 }
 
 /* Estilo específico para el gif de Pikmin */
