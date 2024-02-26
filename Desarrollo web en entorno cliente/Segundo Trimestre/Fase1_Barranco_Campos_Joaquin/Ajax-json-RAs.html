@@ -5,15 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON/AJAX - Joaquin Barranco Campos</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-<h3> Desarrollo Web en Entorno Cliente </h3>
-<p> Selecciona un RA para ver sus criterios </p>
-<select title="Los RAs" id="selectRA" onchange="mostrarCriterios()"></select>
-<br>
-<br>
-<div id = "info"></div>
-<script src="script.js"></script>
+    <h3>Desarrollo Web en Entorno Cliente</h3>
+    <p>Selecciona un RA para ver sus criterios</p>
+    <select title="Los RAs" id="selectRA" onchange="mostrarCriterios()"></select>
+    <br>
+    <br>
+    <div id="info"></div>
+
+    <!-- Agregamos el formulario de inicio de sesión -->
+    <div id="login-form-container" style="display: none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
 </body>
+
 </html>
