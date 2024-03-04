@@ -1,0 +1,115 @@
+{
+    "Desarrollo Web en Entorno Cliente": [
+      {
+        "id": "RA1",
+        "textoRA": "Selecciona las arquitecturas y tecnologías de programación Web en entorno cliente, identificando y analizando las capacidades y características de cada una.",
+        "criterios": {
+          "a": "Se han caracterizado y diferenciado los modelos de ejecución de código en el servidor y en el cliente Web.",
+          "b": "Se han identificado las capacidades y mecanismos de ejecución de código de los navegadores Web.",
+          "c": "Se han identificado y caracterizado los principales lenguajes relacionados con la programación de clientes Web.",
+          "d": "Se han reconocido las particularidades de la programación de guiones y sus ventajas y desventajas sobre la programación tradicional.",
+          "e": "Se han verificado los mecanismos de integración de los lenguajes de marcas con los lenguajes de programación de clientes Web.",
+          "f": "Se han reconocido y evaluado las herramientas de programación sobre clientes Web."
+        },
+        "peso": "10%"
+      },
+  
+      {
+        "id": "RA2",
+        "textoRA": "Escribe sentencias simples, aplicando la sintaxis del lenguaje y verificando su ejecución sobre navegadores Web.",
+        "criterios": {
+          "a": "Se ha seleccionado un lenguaje de programación de clientes Web en función de sus posibilidades.",
+          "b": "Se han utilizado los distintos tipos de variables y operadores disponibles en el lenguaje.",
+          "c": "Se han identificado los ámbitos de utilización de las variables.",
+          "d": "Se han reconocido y comprobado las peculiaridades del lenguaje respecto a las conversiones entre distintos tipos de datos.",
+          "e": "Se han añadido comentarios al código.",
+          "f": "Se han utilizado mecanismos de decisión en la creación de bloques de sentencias.",
+          "g": "Se han utilizado bucles y se ha verificado su funcionamiento.",
+          "h": "Se han utilizado herramientas y entornos para facilitar la programación, prueba y depuración del código."
+        },
+        "peso": "10%"
+      },
+  
+      {
+        "id": "RA3",
+        "textoRA": "Escribe código, identificando y aplicando las funcionalidades aportadas por los objetos predefinidos del lenguaje.",
+        "criterios": {
+          "a": "Se han identificado los objetos predefinidos del lenguaje.",
+          "b": "Se han analizado los objetos referentes a las ventanas del navegador y los documentos Web que contienen.",
+          "c": "Se han escrito sentencias que utilicen los objetos predefinidos del lenguaje para cambiar el aspecto del navegador y el documento que contiene.",
+          "d": "Se han generado textos y etiquetas como resultado de la ejecución de código en el navegador.",
+          "e": "Se han escrito sentencias que utilicen los objetos predefinidos del lenguaje para interactuar con el usuario.",
+          "f": "Se han utilizado las características propias del lenguaje en documentos compuestos por varias ventanas y marcos.",
+          "g": "Se han utilizado «cookies» para almacenar información y recuperar su contenido.",
+          "h": "Se ha depurado y documentado el código."
+        },
+        "peso": "10%"
+      },
+  
+      {
+        "id": "RA4",
+        "textoRA": "Programa código para clientes Web analizando y utilizando estructuras definidas por el usuario.",
+        "criterios": {
+          "a": "Se han clasificado y utilizado las funciones predefinidas del lenguaje.",
+          "b": "Se han creado y utilizado funciones definidas por el usuario.",
+          "c": "Se han reconocido las características del lenguaje relativas a la creación y uso de arrays.",
+          "d": "Se han creado y utilizado arrays.",
+          "e": "Se han reconocido las características de orientación a objetos del lenguaje.",
+          "f": "Se ha creado código para definir la estructura de objetos.",
+          "g": "Se han creado métodos y propiedades.",
+          "h": "Se ha creado código que haga uso de objetos definidos por el usuario.",
+          "i": "Se ha depurado y documentado el código."
+        },
+        "peso": "10%"
+      },
+  
+      {
+        "id": "RA5",
+        "textoRA": "Desarrolla aplicaciones Web interactivas integrando mecanismos de manejo de eventos.",
+        "criterios": {
+          "a": "Se han reconocido las posibilidades del lenguaje de marcas relativas a la captura de los eventos producidos.",
+          "b": "Se han identificado las características del lenguaje de programación relativas a la gestión de los eventos.",
+          "c": "Se han diferenciado los tipos de eventos que se pueden manejar.",
+          "d": "Se ha creado un código que capture y utilice eventos.",
+          "e": "Se han reconocido las capacidades del lenguaje relativas a la gestión de formularios Web.",
+          "f": "Se han validado formularios Web utilizando eventos.",
+          "g": "Se han utilizado expresiones regulares para facilitar los procedimientos de validación.",
+          "h": "Se ha probado y documentado el código."
+        },
+        "peso": "20%"
+      },
+  
+      {
+        "id": "RA6",
+        "textoRA": "Desarrolla aplicaciones Web analizando y aplicando las características del modelo de objetos del documento.",
+        "criterios": {
+          "a": "Se ha reconocido el modelo de objetos del documento de una página Web.",
+          "b": "Se han identificado los objetos del modelo, sus propiedades y métodos.",
+          "c": "Se ha creado y verificado un código que acceda a la estructura del documento.",
+          "d": "Se han creado nuevos elementos de la estructura y modificado elementos ya existentes.",
+          "e": "Se han asociado acciones a los eventos del modelo.",
+          "f": "Se han identificado las diferencias que presenta el modelo en diferentes navegadores.",
+          "g": "Se han programado aplicaciones Web de forma que funcionen en navegadores con diferentes implementaciones del modelo.",
+          "h": "Se han independizado las tres facetas (contenido, aspecto y comportamiento) , en aplicaciones Web."
+        },
+        "peso": "20%"
+      },
+  
+      {
+        "id": "RA7",
+        "textoRA": "Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.",
+        "criterios": {
+          "a": "Se han analizado los mecanismos disponibles para el establecimiento de la comunicación asíncrona.",
+          "b": "Se han reconocido las ventajas de utilizar servicios Web para proporcionar acceso a funcionalidades incorporadas a la lógica de negocio de una aplicación.",
+          "c": "Se han utilizado los objetos relacionados.",
+          "d": "Se han identificado sus propiedades y sus métodos.",
+          "e": "Se ha utilizado comunicación asíncrona en la actualización dinámica del documento Web.",
+          "f": "Se han utilizado distintos formatos en el envío y recepción de información.",
+          "g": "Se han programado aplicaciones Web asíncronas de forma que funcionen en diferentes navegadores.",
+          "h": "Se han clasificado y analizado librerías que faciliten la incorporación de las tecnologías de actualización dinámica a la programación de páginas Web.",
+          "i": "Se han creado y depurado programas que utilicen estas librerías."
+        },
+        "peso": "20%"
+      }
+    ]
+  }

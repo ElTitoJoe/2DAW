@@ -1,0 +1,41 @@
+h1, h2, p {
+    font-weight: bold;
+    color: rgb(23, 34, 180);
+}
+span {
+    color: rgb(94, 86, 207);
+}
+select {
+    width: 400px;
+}
+.contenedor {
+    border: 2px solid rgb(18, 150, 173);
+    padding: 20px;
+    border-radius: 10%;
+}
+button {
+    border: 2px solid rgb(25, 107, 184);
+    background-color: rgb(148, 231, 227);
+    border-radius: 50%;
+}
+img {
+    width: 150px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+header h1 {
+    position: relative;
+    top: 30px;
+    padding: 20px;
+}
+td {
+    padding: 3px;
+}
+.profesor {
+    display: none;
+}
