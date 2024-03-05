@@ -105,7 +105,6 @@ function agregarCriterio() {
     var notaPorcentaje = document.getElementById("notaPorcentaje").value + "%";
     var texto = document.getElementById("texto").value.toUpperCase();
     var tipoActividad = document.getElementById("tipoActividad").value;
-    var selectedRA = selectRA.value;
 
     // Verificar que se haya seleccionado un criterio y no esté duplicado
     if (selectedCriterio !== "" && !criteriosAgregados[selectedCriterioText]) {
@@ -116,5 +115,6 @@ function agregarCriterio() {
         criteriosAgregados[selectedCriterioText] = true; // Registrar el criterio agregado
     }
 }
+
 // Cargar RA al cargar la página
 cargarRA();
