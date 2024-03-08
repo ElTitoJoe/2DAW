@@ -98,7 +98,7 @@ function mostrarDatosRA() {
 }
 
 // Función para agregar un criterio seleccionado
-function agregarCriterio() {
+function agregarCriterios() {
     var selectedCriterio = selectCriterio.value;
     var selectedCriterioText = selectCriterio.options[selectCriterio.selectedIndex].text;
     var criterioKey = selectedCriterioText.substring(0, selectedCriterioText.indexOf(' - ')); // Extraer el código del RA del texto del criterio
@@ -116,5 +116,51 @@ function agregarCriterio() {
     }
 }
 
+// Función para agregar un objetivo seleccionado
+function agregarObjetivos() {
+    var objetivoSelect = document.getElementsByName("objetivo")[0]; // Seleccionar el elemento select de objetivos
+    var selectedObjetivo = objetivoSelect.options[objetivoSelect.selectedIndex].text; // Obtener el texto del objetivo seleccionado
+
+    if (selectedObjetivo !== "") {
+        var divObjetivosSeleccionados = document.getElementById("objetivosSeleccionados");
+        var objetivosAgregados = divObjetivosSeleccionados.getElementsByTagName("div");
+
+        // Verificar si el objetivo ya ha sido agregado
+        var objetivoExistente = Array.from(objetivosAgregados).some(function (element) {
+            return element.textContent === selectedObjetivo;
+        });
+
+        // Si el objetivo no ha sido agregado, añadirlo
+        if (!objetivoExistente) {
+            var div = document.createElement("div");
+            div.textContent = selectedObjetivo; // Mostrar el objetivo seleccionado en un div
+            divObjetivosSeleccionados.appendChild(div); // Agregar el div al contenedor de objetivos seleccionados
+        } else {
+            alert("¡Este objetivo ya ha sido seleccionado!");
+        }
+    }
+}
+function imprimirPdf() {
+    // Crear un nuevo documento PDF
+    var doc = new jsPDF();
+
+    // Obtener el contenido de los divs listaObjetivos y listaCriterios como texto
+    var contenidoObjetivos = document.getElementById("listaObjetivos").innerText;
+    var contenidoCriterios = document.getElementById("listaCriterios").innerText;
+
+    // Agregar el contenido al documento PDF
+    doc.text(20, 20, "Lista de Objetivos:");
+    doc.text(20, 30, contenidoObjetivos);
+
+    doc.addPage(); // Agregar una nueva página para los criterios
+    doc.text(20, 20, "Lista de Criterios:");
+    doc.text(20, 30, contenidoCriterios);
+
+    // Descargar el PDF con el nombre "Contenido.pdf"
+    doc.save("Contenido.pdf");
+}
+
+
 // Cargar RA al cargar la página
 cargarRA();
+

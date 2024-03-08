@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>JSON Joaquin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://blogsaverroes.juntadeandalucia.es/eiadelfa/files/2020/12/LOGO-JUNTA-ANDALUCIA-2.png" alt="">
+        <h1>PROYECTO DWC 2023-2024</h1>
+        <img src="https://www.iesmurgi.org/web3/wp-content/uploads/2019/03/SOLO-LOGO.png" alt="">
+    </header>
+    <main>
+        <div class="container contenedor">
+            <div class="row" id="login">
+                <div class="col-12">
+                    <h2>Login de usuario</h2>
+                    <form id="loginForm">
+                        <table>
+                            <tr>
+                                <td><label for="username">Usuario:</label></td>
+                                <td><input type="text" id="username" name="username" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Contraseña:</label></td>
+                                <td><input type="password" id="password" name="password" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="button" onclick="iniciarSesion()">Iniciar sesión</button>
+                                </td>
+                            </tr>
+                            <tr class="profesor">
+                                <td><label for="profesor">Nombre Profesor:</label></td>
+                                <td><input type="text" name="profesor" id="profesor"></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <div class="row" id="formulario">
+                <div class="col-sm-12">
+                    <h2>Sistemas Informáticos</h2>
+                    <p>PROFESOR: <span id="info"></span></p>
+                    <table>
+                        <tr>
+                            <td><label for="raSelect">Selecciona un RA:</label></td>
+                            <td> <select id="raSelect"></select></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="mostrarDatosRA()">Mostrar Criterios</button></td>
+                        </tr>
+                        <tr>
+                            <td><label for="objetivo">Selecciona objetivos:</label></td>
+                            <td><select name="objetivo">
+                                <option value="1">Ajustar la configuración lógica analizando las necesidades y criterios establecidos para configurar y explotar sistemas informáticos.</option>
+                                <option value="2">Identificar las necesidades de seguridad verificando el plan preestablecido para aplicar técnicas y procedimientos relacionados.</option>
+                                <option value="3">Instalar módulos analizando su estructura y funcionalidad para gestionar servidores de aplicaciones.</option>
+                                <option value="4">Ajustar parámetros analizando la configuración para gestionar servidores de aplicaciones.</option>
+                                <option value="5">Interpretar el diseño lógico, verificando los parámetros establecidos para gestionar bases de datos.</option>
+                                <option value="6">Seleccionar lenguajes, objetos y herramientas, interpretando las especificaciones para desarrollar aplicaciones web con acceso a bases de datos.</option>
+                                <option value="7">Utilizar lenguajes, objetos y herramientas, interpretando las especificaciones para desarrollar aplicaciones web con acceso a bases de datos.</option>
+                                <option value="8">Generar componentes de acceso a datos, cumpliendo las especificaciones, para integrar contenidos en la lógica de una aplicación web.</option>
+                                <option value="9">Utilizar lenguajes de marcas y estándares web, asumiendo el manual de estilo, para desarrollar interfaces en aplicaciones web.</option>
+                                <option value="10">Emplear herramientas y lenguajes específicos, siguiendo las especificaciones, para desarrollar componentes multimedia.</option>
+                                <option value="11">Evaluar la interactividad, accesibilidad y usabilidad de un interfaz, verificando los criterios preestablecidos, para Integrar componentes multimedia en el interfaz de una aplicación.</option>
+                                <option value="12">Utilizar herramientas y lenguajes específicos, cumpliendo las especificaciones, para desarrollar e integrar componentes software en el entorno del servidor web.</option>
+                                <option value="13">Emplear herramientas específicas, integrando la funcionalidad entre aplicaciones, para desarrollar servicios empleables en aplicaciones web.</option>
+                                <option value="14">Evaluar servicios distribuidos ya desarrollados, verificando sus prestaciones y funcionalidad, para integrar servicios distribuidos en una aplicación web.</option>
+                                <option value="15">Verificar los componentes de software desarrollados, analizando las especificaciones, para completar el plan de pruebas.</option>
+                                <option value="16">Utilizar herramientas específicas, cumpliendo los estándares establecidos, para elaborar y mantener la documentación de los procesos.</option>
+                                <option value="17">Establecer procedimientos, verificando su funcionalidad, para desplegar y distribuir aplicaciones.</option>
+                                <option value="18">Programar y realizar actividades para gestionar el mantenimiento de los recursos informáticos.</option>
+                                <option value="19">Analizar y utilizar los recursos y oportunidades de aprendizaje relacionadas con la evolución científica, tecnológica y organizativa del sector y las tecnologías de la información y la comunicación, para mantener el espíritu de actualización y adaptarse a nuevas situaciones laborales y personales.</option>
+                                <option value="20">Desarrollar la creatividad y el espíritu de innovación para responder a los retos que se presentan en los procesos y organización de trabajo y de la vida personal.</option>
+                                <option value="21">Tomar decisiones de forma fundamentada analizando las variables implicadas, integrando saberes de distinto ámbito y aceptando los riesgos y la posibilidad de equivocación en las mismas, para afrontar y resolver distintas situaciones, problemas o contingencias</option>
+                                <option value="22">Desarrollar técnicas de liderazgo, motivación, supervisión y comunicación en contextos de trabajo en grupo para facilitar la organización y coordinación de equipos de trabajo</option>
+                                <option value="23">Aplicar estrategias y técnicas de comunicación adaptándose a los contenidos que se van a transmitir, la finalidad y a las características de los receptores, para asegurar la eficacia en los procesos de comunicación.</option>
+                                <option value="24">Evaluar situaciones de prevención de riesgos laborales y de protección ambiental, proponiendo y aplicando medidas de prevención personales y colectivas, de acuerdo a la normativa aplicable en los procesos del trabajo, para garantizar entornos seguros.</option>
+                                <option value="25">Identificar y proponer las acciones profesionales necesarias para dar respuesta a la accesibilidad universal y al diseño para todos.</option>
+                                <option value="26">Identificar y aplicar parámetros de calidad en los trabajos y actividades realizados en el proceso de aprendizaje para valorar la cultura de la evaluación y de la calidad y ser capaces de supervisar y mejorar procedimientos de gestión de calidad.</option>
+                                <option value="27">Utilizar procedimientos relacionados con la cultura emprendedora, empresarial y de iniciativa profesional, para realizar la gestión básica de una pequeña empresa o emprender un trabajo.</option>
+                                <option value="28">Reconocer sus derechos y deberes como agente activo en la sociedad, teniendo en cuenta el marco legal que regula las condiciones sociales y laborales para participar como ciudadano democrático.</option>
+                              </select></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="agregarObjetivos()">Añadir objetivo</button></td>
+                        </tr>
+                        <tr>
+                            <td><label for="criterioSelect">Selecciona un criterio:</label></td>
+                            <td><select id="criterioSelect"></select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="notaPorcentaje">Porcentaje de Nota (%):</label></td>
+                            <td><input type="number" id="notaPorcentaje" min="0" max="100"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="texto">Texto:</label></td>
+                            <td><input type="text" id="texto"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tipoActividad">Tipo de Actividad:</label></td>
+                            <td><select id="tipoActividad">
+                                    <option value="Test">Test</option>
+                                    <option value="PruebaPractica">Prueba Práctica</option>
+                                    <option value="PruebaEscrita">Prueba Escrita</option>
+                                    <option value="PruebaTeoricoPractica">Prueba Teorico Práctica</option>
+                                    <option value="Trabajo">Trabajo</option>
+                                    <option value="Proyecto">Proyecto</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="agregarCriterios()">Añadir Criterio</button></td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                <div class="col-sm-12" id="listaObjetivos">
+                    <h2>Lista Objetivos</h2>
+                    <div id="objetivosSeleccionados"></div>
+                </div>
+                <div class="col-sm-12" id="listaCriterios">
+                    <h2>Lista Criterios</h2>
+                    <div id="criteriosSeleccionados"></div>
+                </div>
+                <button onclick="imprimirPdf()">Imprimir pdf</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
