@@ -151,8 +151,6 @@ function imprimirPdf() {
     // Agregar el contenido al documento PDF
     doc.text(20, 20, "Lista de Objetivos:");
     doc.text(20, 30, contenidoObjetivos);
-
-    doc.addPage(); // Agregar una nueva página para los criterios
     doc.text(20, 20, "Lista de Criterios:");
     doc.text(20, 30, contenidoCriterios);
 
