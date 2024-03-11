@@ -1,6 +1,6 @@
 <?php
 // Conectar a la base de datos
-$db = new PDO('mysql:host=localhost;dbname=tienda', 'root', 'usuario');
+$db = new PDO('mysql:host=localhost;dbname=pikminShop', 'root', 'usuario');
 
 // Comprobar si se ha enviado el formulario de registro
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

@@ -27,7 +27,7 @@ if (isset($_POST['logout'])) {
 
 try {
     // Conectar a la base de datos
-    $db = new PDO('mysql:host=localhost;dbname=tienda', 'root', 'usuario');
+    $db = new PDO('mysql:host=localhost;dbname=pikminShop', 'root', 'usuario');
 
     // Comprobar si se ha enviado el formulario de añadir producto
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['añadir_producto'])) {
