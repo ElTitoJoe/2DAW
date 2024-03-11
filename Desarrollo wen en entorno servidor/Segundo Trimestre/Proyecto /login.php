@@ -12,7 +12,8 @@ try {
 }
 
 // Comprobar si se ha enviado el formulario
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && empty($error)) {
+if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST' && empty($error)) {
+
     // Obtener los datos del formulario
     $username = $_POST['username'];
     $password = $_POST['password'];
