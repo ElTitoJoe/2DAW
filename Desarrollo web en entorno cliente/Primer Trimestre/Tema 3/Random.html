@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enlace aleatorio y saludo</title>
+</head>
+<body>
+
+<script>
+  var numeroAleatorio = Math.random();
+
+  if (numeroAleatorio < 0.5) {
+    var enlace = document.createElement("a");
+    enlace.href = "https://funciono.com";
+    enlace.textContent = "Funcionó";
+    document.body.appendChild(enlace);
+  } else {
+    var hora = new Date().getHours();
+    var saludo;
+
+    if (hora >= 5 && hora < 12) {
+      saludo = "Buenos días";
+    } else if (hora >= 12 && hora < 18) {
+      saludo = "Buenas tardes";
+    } else {
+      saludo = "Buenas noches";
+    }
+
+    var mensajeSaludo = document.createElement("p");
+    mensajeSaludo.textContent = saludo;
+    document.body.appendChild(mensajeSaludo);
+  }
+</script>
+
+</body>
+</html>

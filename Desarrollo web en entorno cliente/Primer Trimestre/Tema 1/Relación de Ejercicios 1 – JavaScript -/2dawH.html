@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Conversión de Base</h1>
+    <form>
+        <label for="numero">Ingrese un número entero:</label>
+        <input type="number" id="numero" name="numero"><br><br>
+        
+        <input type="button" value="Convertir" onclick="convertirNumero()">
+    </form>
+
+    <p>Resultado en base 16 (hexadecimal): <span id="base16"></span></p>
+    <p>Resultado en base 5: <span id="base5"></span></p>
+
+    <a href="web.html">
+        <button>Volver</button>
+    </a> 
+
+    <script>
+        function convertirNumero() {
+            var numero = parseInt(document.getElementById("numero").value);
+            
+            if (!isNaN(numero)) {
+                var base16 = numero.toString(16).toUpperCase();
+                var base5 = convertirBase5(numero);
+                
+                document.getElementById("base16").textContent = base16;
+                document.getElementById("base5").textContent = base5;
+            } else {
+                alert("Por favor, ingrese un número entero válido.");
+                document.getElementById("base16").textContent = "";
+                document.getElementById("base5").textContent = "";
+            }
+        }
+        function convertirBase5(numero) {
+            var base5 = '';
+            
+            while (numero > 0) {
+                var residuo = numero % 5;
+                base5 = residuo + base5;
+                numero = Math.floor(numero / 5);
+            }                                                   
+            
+            return base5;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Conversión de Base</h1>
+    <form>
+        <label for="numero">Ingrese un número entero:</label>
+        <input type="number" id="numero" name="numero"><br><br>
+        
+        <label for="base">Ingrese la base a la que desea convertir:</label>
+        <input type="number" id="base" name="base"><br><br>
+        
+        <input type="button" value="Convertir" onclick="convertirNumero()">
+    </form>
+
+    <p>Resultado:</p>
+    <p id="resultado"></p>
+
+    <a href="web.html">
+        <button>Volver</button>
+    </a> 
+
+    <script>
+        function convertirNumero() {
+            var numero = parseInt(document.getElementById("numero").value);
+            var base = parseInt(document.getElementById("base").value);
+            
+            if (!isNaN(numero) && !isNaN(base) && base >= 2 && base <= 36) {
+                var resultado = numero.toString(base);
+                document.getElementById("resultado").textContent = "Número en base " + base + ": " + resultado;
+            } else {
+                alert("Por favor, ingrese un número entero válido y una base entre 2 y 36.");
+                document.getElementById("resultado").textContent = "";
+            }
+        }
+    </script>
+</body>
+</html>

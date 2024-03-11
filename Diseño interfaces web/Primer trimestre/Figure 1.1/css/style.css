@@ -1,0 +1,12 @@
+.custom-breadcrumb {
+  background-color: #dee2e3;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+.custom-breadcrumb .breadcrumb-item {
+  letter-spacing: 1px;
+}
+.custom-breadcrumb .breadcrumb-divider {
+  margin: 0 5px;
+}/*# sourceMappingURL=style.css.map */

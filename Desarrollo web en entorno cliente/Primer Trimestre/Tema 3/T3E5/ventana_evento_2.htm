@@ -1,0 +1,99 @@
+<html>
+   <head>
+      <title>
+         P&aacute;gina con Javascript.
+      </title>
+      <script>
+         let ventanaSecundaria;
+ 
+         function abrirVentana() {
+            const parametros = "width=400, height=300, left=200, top=150, resizable=no, menubar=no, toolbar=no, directories=no, location=no, scrollbars=no, status=no";
+            ventanaSecundaria = window.open("texto_de_secundaria_2.htm", "ventana", parametros);
+        }
+ 
+         function cerrarVentanaSecundaria() {
+             if (ventanaSecundaria) {
+                 ventanaSecundaria.close();
+             }
+         }
+ 
+         function pedirCoordenadas() {
+             const leftValue = prompt("Introduce la coordenada left para la ventana secundaria:");
+             const topValue = prompt("Introduce la coordenada top para la ventana secundaria:");
+ 
+             if (ventanaSecundaria && !isNaN(leftValue) && !isNaN(topValue)) {
+                 ventanaSecundaria.moveTo(Number(leftValue), Number(topValue));
+             }
+         }
+ 
+         function seleccionarColores() {
+             const colores = document.getElementById("colores");
+             const selectedColor = colores.options[colores.selectedIndex].value;
+ 
+             if (ventanaSecundaria) {
+                 ventanaSecundaria.document.body.style.backgroundColor = selectedColor;
+             }
+         }
+ 
+         function aplicarFocus() {
+             if (ventanaSecundaria) {
+                 ventanaSecundaria.focus();
+             }
+         }
+ 
+         function aplicarBlur() {
+             if (ventanaSecundaria) {
+                 ventanaSecundaria.blur();
+             }
+         }
+ 
+         function tiempoActivaVentana() {
+            const tiempo = prompt("Introduce el tiempo en milisegundos para que la ventana secundaria esté activa:");
+
+            if (ventanaSecundaria && !isNaN(tiempo)) {
+                setTimeout(() => {
+                    cerrarVentanaSecundaria();
+                }, Number(tiempo));
+            }
+        }
+ 
+         function textoYEstilo() {
+             const texto = prompt("Introduce el texto a mostrar en la ventana secundaria:");
+             const tamañoTexto = prompt("Introduce el tamaño del texto:");
+             const colorTexto = prompt("Introduce el color del texto:");
+ 
+             if (ventanaSecundaria && texto && tamañoTexto && colorTexto) {
+                 ventanaSecundaria.document.body.innerHTML = `<h1 style="font-size: ${tamañoTexto}px; color: ${colorTexto};">${texto}</h1>`;
+             }
+         }
+
+         function pedirTextoVentanaSecundaria() {
+            const texto = prompt("Introduce el texto a mostrar en la ventana secundaria:");
+
+            if (ventanaSecundaria && texto) {
+                ventanaSecundaria.document.body.innerHTML = `<h1>${texto}</h1>`;
+            }
+        }
+
+     </script>
+   </head>
+   <body>
+      <button onclick="abrirVentana();">Abrir Ventana Secundaria</button><br><br>
+      <button onclick="cerrarVentanaSecundaria();">Cerrar Ventana Secundaria</button><br><br>
+      <button onclick="pedirCoordenadas();">Asignar Coordenadas a Ventana Secundaria</button><br><br>
+  
+      <label for="colores">Seleccionar Color de Fondo:</label>
+      <select id="colores" onchange="seleccionarColores();">
+          <option value="white">Blanco</option>
+          <option value="lightblue">Azul Claro</option>
+          <option value="lightgreen">Verde Claro</option>
+          <option value="red">Rojo</option>
+      </select><br><br>
+  
+      <button onclick="aplicarFocus();">Aplicar Focus a Ventana Secundaria</button><br><br>
+      <button onclick="aplicarBlur();">Aplicar Blur a Ventana Secundaria</button><br><br>
+      <button onclick="pedirTextoVentanaSecundaria();">Pedir Texto para Ventana Secundaria</button><br><br> 
+      <button onclick="tiempoActivaVentana();">Tiempo de Actividad de Ventana Secundaria</button><br><br>
+      <button onclick="textoYEstilo();">Ingresar Texto y Estilo a Ventana Secundaria</button><br><br>
+  </body>
+</html>

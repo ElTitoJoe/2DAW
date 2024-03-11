@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Resta de Dos Números</h1>
+    <form>
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" name="numero1"><br><br>
+        
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" name="numero2"><br><br>
+        
+        <input type="button" value="Restar" onclick="restarNumeros()">
+    </form>
+
+    <p>Resultado: <span id="resultado"></span></p>
+
+    <a href="web.html">
+        <button>Volver</button>
+    </a> 
+
+    <script>
+        function restarNumeros() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            
+            if (!isNaN(num1) && !isNaN(num2)) {
+                var resultado = num1 - num2;
+                document.getElementById("resultado").textContent = "La resta es: " + resultado;
+            } else {
+                document.getElementById("resultado").textContent = "Por favor, ingrese números válidos.";
+            }
+        }
+    </script>
+</body>
+</html>

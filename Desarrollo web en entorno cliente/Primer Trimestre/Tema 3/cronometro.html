@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cronómetro</title>
+</head>
+<body>
+    <h1>Cronómetro</h1>
+    <p id="cronometro">0:00:00.000</p>
+    <button id="startStop">Iniciar</button>
+    <button id="reset">Reiniciar</button>
+
+    <script>
+        let running = false;
+        let startTime = 0;
+        let intervalId;
+        let horas = 0;
+        let minutos = 0;
+        let segundos = 0;
+        let milisegundos = 0;
+
+        const cronometro = document.getElementById("cronometro");
+        const startStopButton = document.getElementById("startStop");
+        const resetButton = document.getElementById("reset");
+
+        startStopButton.addEventListener("click", () => {
+            if (running) {
+                clearInterval(intervalId);
+                startStopButton.textContent = "Iniciar";
+            } else {
+                startTime = Date.now() - (startTime || 0);
+                intervalId = setInterval(actualizarCronometro, 1);
+                startStopButton.textContent = "Detener";
+            }
+            running = !running;
+        });
+
+        resetButton.addEventListener("click", () => {
+            clearInterval(intervalId);
+            cronometro.textContent = "0:00:00.000";
+            running = false;
+            startStopButton.textContent = "Iniciar";
+            startTime = 0;
+            horas = 0;
+            minutos = 0;
+            segundos = 0;
+            milisegundos = 0;
+        });
+
+        function actualizarCronometro() {
+            const tiempoTranscurrido = Date.now() - startTime;
+            horas = Math.floor(tiempoTranscurrido / 3600000);
+            minutos = Math.floor((tiempoTranscurrido % 3600000) / 60000);
+            segundos = Math.floor((tiempoTranscurrido % 60000) / 1000);
+            milisegundos = tiempoTranscurrido % 1000;
+            cronometro.textContent = `${horas}:${minutos < 10 ? '0' : ''}${minutos}:${segundos < 10 ? '0' : ''}${segundos}.${milisegundos < 10 ? '00' : (milisegundos < 100 ? '0' : '')}${milisegundos}`;
+        }
+    </script>
+</body>
+</html>

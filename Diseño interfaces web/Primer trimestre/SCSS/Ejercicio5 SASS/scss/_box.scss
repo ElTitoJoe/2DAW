@@ -1,0 +1,15 @@
+$color-map: (
+  success: rgb(181, 192, 148)
+);
+
+@each $key, $color in $color-map {
+  .box-#{$key} {
+    color: $color;
+    background-color: rgba($color, 0.15);
+    border: 1px solid lighten($color, 10%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+}
+

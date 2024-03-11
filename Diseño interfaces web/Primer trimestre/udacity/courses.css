@@ -1,0 +1,24 @@
+.contenedor_principal{
+    display: flex;
+    border-style: double;
+    border-color: burlywood;
+    margin-top: auto;
+}
+.menu_lateral{
+    display: flex;
+    flex-direction: column;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+div{
+    border-style: double;
+    border-color: blue;
+    margin: 5px;
+}

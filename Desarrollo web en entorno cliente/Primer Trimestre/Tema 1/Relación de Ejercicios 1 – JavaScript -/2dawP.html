@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joaquín</title>
+</head>
+<body>
+    <h1>Múltiplos de 23 y Suma</h1>
+
+    <a href="web.html">
+        <button>Volver</button>
+    </a> 
+
+    <script>
+        var suma = 0;
+
+        for (var i = 23; i < 1000; i += 23) {
+            document.write(i + "<br>");
+            suma += i;
+        }
+
+        document.write("<p>La suma de los múltiplos de 23 inferiores a 1000 es: " + suma + "</p>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+*{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.box {
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
+  padding: 10px;
+}
+
+.box1 { background:#1abc9c; flex: 10 5 400px;}
+.box2 { background:#3498db; flex: 1 1 360px;}
+
+.container {
+  border: 10px solid gold;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+body{
+  margin: 0%;  
+ }

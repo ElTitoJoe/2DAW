@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Fibonacci</title>
+</head>
+<body>
+  <h1>Calculadora de Fibonacci</h1>
+  
+  <label for="num">Calcular Fibonacci hasta:</label>
+  <input type="number" id="num" min="1">
+  <button onclick="calcularFibonacci()">Calcular</button>
+  
+  <p id="resultado"></p>
+  
+  <script>
+    function calcularFibonacci() {
+      const num = parseInt(document.getElementById('num').value);
+      if (num <= 0) {
+        alert('Ingresa un número mayor que cero.');
+        return;
+      }
+      
+      let resultado = 'Secuencia de Fibonacci:';
+      let a = 0, b = 1, nextTerm;
+      
+      for (let i = 1; i <= num; i++) {
+        resultado += ' ' + a;
+        nextTerm = a + b;
+        a = b;
+        b = nextTerm;
+      }
+      
+      document.getElementById('resultado').textContent = resultado;
+    }
+  </script>
+</body>
+</html>
