@@ -6,7 +6,7 @@ $error = '';
 
 // Conectar a la base de datos
 try {
-    $db = new PDO('mysql:host=localhost;dbname=pikminShop', 'root', 'usuario');
+    $db = new PDO('mysql:host=localhost;dbname=pikminShop', 'root', 'root');
 } catch (PDOException $e) {
     $error = 'No se pudo conectar a la base de datos';
 }

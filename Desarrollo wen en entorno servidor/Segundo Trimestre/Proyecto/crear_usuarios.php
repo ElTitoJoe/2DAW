@@ -1,6 +1,6 @@
 <?php
 // Conectar a la base de datos
-$db = new PDO('mysql:host=localhost;dbname=pikminShop', 'root', 'usuario');
+$db = new PDO('mysql:host=localhost;dbname=pikminshop', 'root', 'root');
 
 // Crear el usuario 'alumno'
 $stmt = $db->prepare('INSERT INTO usuarios (nombre, contrasena, es_admin) VALUES (?, ?, ?)');
